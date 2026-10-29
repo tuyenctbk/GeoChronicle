@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">GeoChronicle</string>
+    <string name="top_bar_title">GeoChronicle</string>
+    <string name="radius_and_stops_format">Bán kính: %1$s • %2$d di tích</string>
+    <string name="my_gps_location">Vị trí GPS của tôi</string>
+    <string name="refresh_history_walk">Làm mới chuyến dạo lịch sử</string>
+    <string name="change_location">Đổi địa điểm</string>
+    <string name="current_gps_location">Vị trí GPS hiện tại</string>
+    <string name="live_walker_coordinates">Tọa độ bước chân trực tiếp</string>
+    <string name="custom_coordinates">Tọa độ tùy chỉnh</string>
+    <string name="historic_district">Khu Di Tích Lịch Sử</string>
+
+    <!-- Các thẻ điều hướng -->
+    <string name="nav_radar">Radar</string>
+    <string name="nav_discover">Khám phá</string>
+    <string name="nav_walk_tour">Tản bộ</string>
+    <string name="nav_journal">Nhật ký</string>
+
+    <!-- Radar -->
+    <string name="radar_scope_label">PHẠM VI RADAR</string>
+    <string name="route_trail">Đường đi bộ</string>
+    <string name="all_stops">Tất cả điểm dừng</string>
+    <string name="connection_error">Lỗi kết nối</string>
+    <string name="retry_discovery">Thử tìm kiếm lại</string>
+    <string name="listen_to_story">Nghe câu chuyện</string>
+    <string name="pause_narration">Tạm dừng thuyết minh</string>
+    <string name="narrate_story">Thuyết minh câu chuyện</string>
+
+    <!-- Khám phá -->
+    <string name="search_placeholder">Tìm tượng đài, nhân vật, chiến tích…</string>
+    <string name="clear_search">Xóa tìm kiếm</string>
+    <string name="all_filter_format">Tất cả (%1$d)</string>
+    <string name="no_landmarks_found_title">Không tìm thấy di tích lịch sử nào phù hợp.</string>
+    <string name="no_landmarks_found_subtitle">Hãy thử mở rộng bán kính quét radar hoặc xóa bộ lọc tìm kiếm.</string>
+
+    <!-- Tuyến tản bộ -->
+    <string name="historical_walking_tour">HÀNH TRÌNH ĐI BỘ LỊCH SỬ</string>
+    <string name="tour_progress_format">Tiến độ chuyến đi: Đã ghé %1$d / %2$d điểm</string>
+    <string name="hands_free_walking_guide">Hướng dẫn âm thanh rảnh tay</string>
+    <string name="auto_narrate_subtitle">Tự động thuyết minh di tích gần bạn nhất</string>
+    <string name="chronological_itinerary">Lộ trình dạo bước theo thứ tự</string>
+
+    <!-- Nhật ký -->
+    <string name="saved_offline_format">Lưu ngoại tuyến (%1$d)</string>
+    <string name="visited_journal_format">Nhật ký đã ghé (%1$d)</string>
+    <string name="no_saved_walks_title">Chưa có di tích nào được lưu ngoại tuyến</string>
+    <string name="no_saved_walks_desc">Lưu các di tích bằng nút đánh dấu để nghe và đọc sử tích ngay cả khi không có mạng trong lúc đi dạo.</string>
+    <string name="no_visited_places_title">Chưa có địa điểm nào được ghi nhận đã ghé</string>
+    <string name="no_visited_places_desc">Đánh dấu những điểm di tích bạn đã đi qua để xây dựng cuốn biên niên sử khám phá của riêng mình.</string>
+
+    <!-- Bảng chi tiết -->
+    <string name="historical_audio_narration">Thuyết minh âm thanh lịch sử</string>
+    <string name="narrating_audio_guide">Đang thuyết minh âm thanh…</string>
+    <string name="audio_guide_paused">Tạm dừng thuyết minh</string>
+    <string name="historical_chronicle_title">Biên Niên Sử Di Tích</string>
+    <string name="action_save">Lưu</string>
+    <string name="action_saved">Đã lưu</string>
+    <string name="action_visited">Đã ghé</string>
+    <string name="action_unvisited">Chưa ghé</string>
+    <string name="action_directions">Chỉ đường</string>
+    <string name="action_wikipedia">Wikipedia</string>
+    <string name="walkers_field_notes">Ghi chép hành trình</string>
+    <string name="field_notes_placeholder">Ghi lại cảm nghĩ, kỷ niệm chụp ảnh hoặc quan sát cá nhân…</string>
+    <string name="field_notes_empty">Chưa có ghi chép nào. Nhấn chỉnh sửa để lưu lại suy nghĩ khám phá của bạn.</string>
+    <string name="save_note">Lưu ghi chép</string>
+    <string name="edit_note">Sửa ghi chép</string>
+    <string name="close">Đóng</string>
+    <string name="speed_format">%1$sx</string>
+
+    <!-- Thanh audio nổi -->
+    <string name="narrating_walking_tour">Đang thuyết minh chuyến đi</string>
+    <string name="stop_narration">Dừng thuyết minh</string>
+
+    <!-- Hộp thoại chọn địa điểm -->
+    <string name="choose_location_title">Chọn địa điểm tản bộ lịch sử</string>
+    <string name="tab_walk_hubs">Cố đô &amp; Thành phố</string>
+    <string name="tab_custom_coords">Tọa độ riêng</string>
+    <string name="use_gps_title">Dùng định vị GPS thiết bị</string>
+    <string name="current_reading_format">Tọa độ hiện thời: %1$s</string>
+    <string name="iconic_cities_title">Những thành phố lịch sử tiêu biểu:</string>
+    <string name="custom_coords_prompt">Nhập tọa độ bất kỳ trên thế giới để vén màn lịch sử bị lãng quên xung quanh:</string>
+    <string name="location_name_label">Tên / Nhãn địa danh</string>
+    <string name="location_name_placeholder">ví dụ: Carthage Cổ Đại</string>
+    <string name="latitude_label">Vĩ độ</string>
+    <string name="longitude_label">Kinh độ</string>
+    <string name="explore_location_button">Khám phá địa điểm này</string>
+    <string name="error_invalid_coordinates">Vui lòng nhập vĩ độ và kinh độ số hợp lệ.</string>
+    <string name="error_coordinate_bounds">Vĩ độ từ -90 đến 90 và kinh độ từ -180 đến 180.</string>
+
+    <!-- Danh mục -->
+    <string name="cat_monument">Đài Kỷ Niệm &amp; Bia Tưởng Niệm</string>
+    <string name="cat_event">Sự Kiện Lịch Sử / Chiến Địa</string>
+    <string name="cat_architecture">Kiến Trúc &amp; Thành Lũy Cổ</string>
+    <string name="cat_sacred">Đền Miếu &amp; Thánh Địa</string>
+    <string name="cat_figure">Nhân Vật Lịch Sử</string>
+    <string name="cat_general">Di Sản &amp; Danh Thắng</string>
+
+    <!-- Ngôn ngữ -->
+    <string name="language_dialog_title">Chọn ngôn ngữ hướng dẫn</string>
+    <string name="select_language">Ngôn ngữ</string>
+
+    <!-- Các điểm định sẵn -->
+    <string name="preset_rome_name">Rome: Đấu Trường La Mã &amp; Quảng Trường Đế Chế</string>
+    <string name="preset_rome_desc">Trái tim của Đế chế La Mã, đền đài cổ kính, cổng khải hoàn và vũ đài đấu sĩ.</string>
+    <string name="preset_london_name">London: Tháp London &amp; Thành Cổ</string>
+    <string name="preset_london_desc">Pháo đài thời trung cổ, vết tích trường thành La Mã và di sản bên sông Thames.</string>
+    <string name="preset_boston_name">Boston: Đường Mòn Tự Do</string>
+    <string name="preset_boston_desc">Cái nôi của Cách mạng Mỹ, những hội quán lịch sử và khu nghĩa trang cổ kính.</string>
+    <string name="preset_paris_name">Paris: Khu Latin &amp; Nhà Thờ Đức Bà</string>
+    <string name="preset_paris_desc">Bồn tắm La Mã cổ, các đại học trung cổ, Điện Panthéon và đảo Île de la Cité.</string>
+    <string name="preset_kyoto_name">Kyoto: Gion &amp; Higashiyama</string>
+    <string name="preset_kyoto_desc">Chùa gỗ trăm năm, đền thờ hoàng gia và những góc phố samurai cổ kính.</string>
+    <string name="preset_athens_name">Athens: Vệ Thành Acropolis &amp; Plaka</string>
+    <string name="preset_athens_desc">Chiếc nôi của nền dân chủ, đền Parthenon, quảng trường cổ và những con dốc lịch sử.</string>
+    <string name="preset_philly_name">Philadelphia: Công Viên Độc Lập</string>
+    <string name="preset_philly_desc">Tòa nhà Độc lập, Chuông Tự do và những con đường lát đá thời thuộc địa.</string>
+    <string name="preset_cairo_name">Cairo: Thành Saladin &amp; Cổng Cổ Ngàn Năm</string>
+    <string name="preset_cairo_desc">Kiến trúc Hồi giáo trung cổ, thành lũy Saladin và những ngọn tháp giáo đường thiên niên kỷ.</string>
+
+    <!-- Dashboard -->
+    <string name="nav_dashboard">Bảng điều khiển</string>
+    <string name="dashboard_title">Bảng Hoạt Động Khám Phá</string>
+    <string name="total_distance_covered">Tổng quãng đường</string>
+    <string name="landmarks_visited_count">Đã ghé thăm</string>
+    <string name="exploration_time">Thời gian khám phá</string>
+    <string name="category_breakdown">Phân loại địa điểm</string>
+    <string name="recent_activity">Khám phá gần đây</string>
+    <string name="distance_format_km">%1$.1f km</string>
+    <string name="time_format_hours_mins">%1$d giờ %2$d phút</string>
+    <string name="time_format_mins">%1$d phút</string>
+    <string name="no_activity_dashboard">Chưa có hoạt động khám phá. Hãy ghé thăm các địa danh lịch sử trên các chặng đi bộ!</string>
+
+    <!-- Share Progress -->
+    <string name="share_progress">Chia sẻ tiến trình</string>
+    <string name="share_progress_subtitle">Xuất thẻ tổng kết chuyến đi lên mạng xã hội hoặc tin nhắn</string>
+    <string name="share_card_subtitle">Hành trình khám phá lịch sử đi bộ</string>
+    <string name="share_tour_summary_title">Tổng kết chuyến đi GeoChronicle</string>
+    <string name="share_chooser_title">Chia sẻ tiến trình chuyến đi bộ</string>
+    <string name="share_button_card">Chia sẻ thẻ tổng kết</string>
+    <string name="share_button_text">Chia sẻ tóm tắt văn bản</string>
+    <string name="share_completed_stops_format">Đã ghé thăm %1$d trên %2$d điểm dừng (%3$d%%)</string>
+    <string name="share_stops_format">%1$d/%2$d điểm dừng (%3$d%%)</string>
+    <string name="share_highlights_title">Điểm nhấn đã ghé thăm</string>
+    <string name="share_no_highlights">Hãy khám phá các điểm dọc tuyến đường để mở khóa điểm nhấn!</string>
+    <string name="share_quote">Lịch sử được kiến tạo qua từng bước chân.</string>
+    <string name="share_text_header">🏛️ Tổng kết chuyến đi bộ GeoChronicle của tôi!</string>
+    <string name="share_text_tour">📍 Chuyến đi</string>
+    <string name="share_text_distance">🗺️ Tổng quãng đường</string>
+    <string name="share_text_visited">🏛️ Địa danh đã ghé</string>
+    <string name="share_text_time">⏱️ Thời gian khám phá</string>
+    <string name="share_text_highlights">Khám phá tiêu biểu:</string>
+    <string name="share_text_footer">Khám phá từng bước cùng GeoChronicle 🚶‍♂️✨</string>
+    <!-- New General, Splash & Formats -->
+    <string name="share_badge_tour">🏛️ HÀNH TRÌNH GEOCHRONICLE</string>
+    <string name="share_footer_brand">🌐 GeoChronicle • Khám phá lịch sử từng bước chân</string>
+    <string name="progress_percentage_format">%1%%</string>
+    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="selected_label">Đã chọn</string>
+    <string name="splash_title">GeoChronicle</string>
+    <string name="splash_tagline">Khám phá di tích lịch sử từng bước chân</string>
+    <string name="radius_meter_format">%1</string>
+    <string name="radius_km_format">%1</string>
+    <string name="category_with_emoji_format">%1 %2</string>
+
+    <!-- Hệ thống ủng hộ -->
+    <string name="donation_dialog_title">Ủng hộ phát triển GeoChronicle</string>
+    <string name="donation_dialog_subtitle">Khám phá lịch sử độc lập &amp; 100% không quảng cáo</string>
+    <string name="donation_active_supporter_badge">Người ủng hộ tích cực</string>
+    <string name="donation_thank_you_title">Cảm ơn sự ủng hộ của bạn! ❤️</string>
+    <string name="donation_thank_you_desc">Sự đóng góp của bạn giúp GeoChronicle luôn 100% không quảng cáo và phát triển độc lập.</string>
+    <string name="donation_tab_google_play">Google Play</string>
+    <string name="donation_tab_paypal">PayPal &amp; QR</string>
+    <string name="donation_tab_kofi">Ko-fi</string>
+    <string name="donation_tier1_title">Gói 1 — Mua tặng tách cà phê</string>
+    <string name="donation_tier1_price">$1.99</string>
+    <string name="donation_tier1_desc">Ủng hộ một tách cà phê cho lập trình viên ☕</string>
+    <string name="donation_tier2_title">Gói 2 — Bữa trưa dev</string>
+    <string name="donation_tier2_price">$4.99</string>
+    <string name="donation_tier2_desc">Ủng hộ phát triển tính năng bản đồ 🍕</string>
+    <string name="donation_tier3_title">Gói 3 — Nhà thám hiểm lịch sử</string>
+    <string name="donation_tier3_price">$9.99</string>
+    <string name="donation_tier3_desc">Mở rộng tuyến đường &amp; thuyết minh lịch sử 🚀</string>
+    <string name="donation_tier4_title">Gói 4 — Nhà tài trợ lớn</string>
+    <string name="donation_tier4_price">$19.99</string>
+    <string name="donation_tier4_desc">Tài trợ chính &amp; nhận huy hiệu danh dự vĩnh viễn 🏆</string>
+    <string name="donation_play_button_format">Ủng hộ %1$s qua Google Play</string>
+    <string name="donation_paypal_select_amount">Chọn số tiền ủng hộ:</string>
+    <string name="donation_paypal_amount_3">$3</string>
+    <string name="donation_paypal_amount_5">$5</string>
+    <string name="donation_paypal_amount_10">$10</string>
+    <string name="donation_paypal_custom_amount">Tùy chỉnh ($)</string>
+    <string name="donation_paypal_qr_instructions">Quét mã QR bằng camera điện thoại để ủng hộ qua PayPal:</string>
+    <string name="donation_paypal_open_button">Mở liên kết PayPal</string>
+    <string name="donation_paypal_copy_button">Sao chép liên kết</string>
+    <string name="donation_paypal_copied_toast">Đã sao chép liên kết PayPal vào bộ nhớ tạm!</string>
+    <string name="donation_kofi_desc">Thích trang web? Bạn có thể ủng hộ trực tiếp qua Ko-fi!</string>
+    <string name="donation_kofi_button">Truy cập Ko-fi</string>
+    <string name="donation_confirm_payment">Kích hoạt huy hiệu người ủng hộ</string>
+    <string name="donation_home_banner_title">Bạn thích GeoChronicle?</string>
+    <string name="donation_home_banner_desc">Ủng hộ ứng dụng khám phá lịch sử độc lập, không quảng cáo.</string>
+    <string name="donation_home_banner_button">Ủng hộ Dev ☕</string>
+    <string name="donation_value_card_title">GeoChronicle giúp ích cho bạn?</string>
+    <string name="donation_value_card_desc">Mua tặng dev một tách cà phê để duy trì ứng dụng không quảng cáo!</string>
+    <string name="donation_value_card_button">Tặng Cà Phê ☕</string>
+    <string name="donation_about_title">Ủng hộ phát triển độc lập</string>
+    <string name="donation_about_privacy_note">GeoChronicle 100% không quảng cáo &amp; tôn trọng quyền riêng tư.</string>
+    <string name="donation_unlocked_toast">Cảm ơn bạn! Đã mở khóa huy hiệu người ủng hộ.</string>
+    <string name="donation_activated_toast">Đã kích hoạt trạng thái người ủng hộ!</string>
+    <string name="donation_processing_payment">Đang xử lý thanh toán 1-Chạm…</string>
+    <string name="donation_enter_amount_label">Nhập số tiền ($)</string>
+    <string name="donation_paypal_link_label">Liên kết PayPal</string>
+    <string name="donation_kofi_header">☕ Tủ tip Ko-fi</string>
+    <string name="lat_placeholder">41.8902</string>
+    <string name="lon_placeholder">12.4922</string>
+</resources>
+

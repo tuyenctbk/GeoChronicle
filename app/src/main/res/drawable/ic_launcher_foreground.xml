@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer radar/compass ring -->
+    <path
+        android:strokeColor="#73E8C782"
+        android:strokeWidth="1.5"
+        android:pathData="M54,28 A26,26 0 1,1 53.9,28 Z" />
+    <path
+        android:strokeColor="#3CE8C782"
+        android:strokeWidth="1"
+        android:pathData="M54,34 A20,20 0 1,1 53.9,34 Z" />
+
+    <!-- Radar scan arc / pulse -->
+    <path
+        android:fillColor="#25E8C782"
+        android:pathData="M54,54 L72,36 A26,26 0 0,0 54,28 Z" />
+
+    <!-- Historical Landmark Column / Temple base -->
+    <path
+        android:fillColor="#E8C782"
+        android:pathData="M43,68 h22 v3 h-22 Z" />
+    <path
+        android:fillColor="#E8C782"
+        android:pathData="M45,64 h18 v2 h-18 Z" />
+    <path
+        android:fillColor="#D8B568"
+        android:pathData="M47,56 h3 v8 h-3 Z M52.5,56 h3 v8 h-3 Z M58,56 h3 v8 h-3 Z" />
+    <path
+        android:fillColor="#E8C782"
+        android:pathData="M45,54 h18 v2 h-18 Z" />
+    <path
+        android:fillColor="#F4D99B"
+        android:pathData="M43,54 L54,46 L65,54 Z" />
+
+    <!-- Compass Rose Star Top & Accents -->
+    <!-- North Point (Light) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,30 L54,46 L51,46 Z" />
+    <!-- North Point (Dark) -->
+    <path
+        android:fillColor="#E8C782"
+        android:pathData="M54,30 L54,46 L57,46 Z" />
+    <!-- East Point (Light) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M78,54 L62,51 L62,54 Z" />
+    <!-- East Point (Dark) -->
+    <path
+        android:fillColor="#D8B568"
+        android:pathData="M78,54 L62,57 L62,54 Z" />
+    <!-- West Point (Light) -->
+    <path
+        android:fillColor="#E8C782"
+        android:pathData="M30,54 L46,51 L46,54 Z" />
+    <!-- West Point (Dark) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,54 L46,57 L46,54 Z" />
+
+    <!-- Center Compass Pivot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,52 A2,2 0 1,1 53.9,52 Z" />
+</vector>

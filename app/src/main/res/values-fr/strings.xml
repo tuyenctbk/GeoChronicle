@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">GeoChronicle</string>
+    <string name="top_bar_title">GeoChronicle</string>
+    <string name="radius_and_stops_format">Rayon : %1$s • %2$d étapes</string>
+    <string name="my_gps_location">Ma position GPS</string>
+    <string name="refresh_history_walk">Actualiser la balade historique</string>
+    <string name="change_location">Changer de lieu</string>
+    <string name="current_gps_location">Position GPS actuelle</string>
+    <string name="live_walker_coordinates">Coordonnées du marcheur en direct</string>
+    <string name="custom_coordinates">Coordonnées personnalisées</string>
+    <string name="historic_district">Quartier Historique</string>
+
+    <!-- Onglets de navigation -->
+    <string name="nav_radar">Radar</string>
+    <string name="nav_discover">Découvrir</string>
+    <string name="nav_walk_tour">Circuit</string>
+    <string name="nav_journal">Journal</string>
+
+    <!-- Radar -->
+    <string name="radar_scope_label">PORTÉE DU RADAR</string>
+    <string name="route_trail">Chemin de marche</string>
+    <string name="all_stops">Toutes les étapes</string>
+    <string name="connection_error">Erreur de connexion</string>
+    <string name="retry_discovery">Réessayer la recherche</string>
+    <string name="listen_to_story">Écouter l\'histoire</string>
+    <string name="pause_narration">Mettre en pause</string>
+    <string name="narrate_story">Raconter l\'histoire</string>
+
+    <!-- Découvrir -->
+    <string name="search_placeholder">Rechercher monuments, personnages, batailles…</string>
+    <string name="clear_search">Effacer la recherche</string>
+    <string name="all_filter_format">Tous (%1$d)</string>
+    <string name="no_landmarks_found_title">Aucun monument historique trouvé correspondant aux critères.</string>
+    <string name="no_landmarks_found_subtitle">Essayez d\'élargir le rayon de recherche ou d\'effacer les filtres.</string>
+
+    <!-- Circuit à pied -->
+    <string name="historical_walking_tour">CIRCUIT HISTORIQUE À PIED</string>
+    <string name="tour_progress_format">Progression du circuit : %1$d / %2$d étapes visitées</string>
+    <string name="hands_free_walking_guide">Guide pédestre mains libres</string>
+    <string name="auto_narrate_subtitle">Raconter automatiquement l\'étape la plus proche</string>
+    <string name="chronological_itinerary">Itinéraire chronologique de visite</string>
+
+    <!-- Journal -->
+    <string name="saved_offline_format">Enregistrés hors ligne (%1$d)</string>
+    <string name="visited_journal_format">Journal des visites (%1$d)</string>
+    <string name="no_saved_walks_title">Aucun circuit enregistré hors ligne pour l\'instant</string>
+    <string name="no_saved_walks_desc">Enregistrez des lieux avec le bouton marque-page pour accéder aux chroniques historiques sans connexion pendant votre balade.</string>
+    <string name="no_visited_places_title">Aucun lieu visité enregistré pour l\'instant</string>
+    <string name="no_visited_places_desc">Marquez les lieux historiques comme visités lors de vos marches pour constituer votre carnet d\'explorateur.</string>
+
+    <!-- Fiche détaillée -->
+    <string name="historical_audio_narration">Narration audio historique</string>
+    <string name="narrating_audio_guide">Audioguide en cours…</string>
+    <string name="audio_guide_paused">Audioguide en pause</string>
+    <string name="historical_chronicle_title">Chronique Historique</string>
+    <string name="action_save">Enregistrer</string>
+    <string name="action_saved">Enregistré</string>
+    <string name="action_visited">Visité</string>
+    <string name="action_unvisited">Non visité</string>
+    <string name="action_directions">Itinéraire</string>
+    <string name="action_wikipedia">Wikipédia</string>
+    <string name="walkers_field_notes">Notes de terrain du marcheur</string>
+    <string name="field_notes_placeholder">Notez vos observations, souvenirs photographiques ou impressions…</string>
+    <string name="field_notes_empty">Aucune note pour l\'instant. Appuyez sur modifier pour noter vos découvertes.</string>
+    <string name="save_note">Sauvegarder la note</string>
+    <string name="edit_note">Modifier la note</string>
+    <string name="close">Fermer</string>
+    <string name="speed_format">%1$sx</string>
+
+    <!-- Barre audio flottante -->
+    <string name="narrating_walking_tour">Narration de la balade en cours</string>
+    <string name="stop_narration">Arrêter la narration</string>
+
+    <!-- Dialogue de lieu -->
+    <string name="choose_location_title">Choisir le lieu de la balade</string>
+    <string name="tab_walk_hubs">Villes phares</string>
+    <string name="tab_custom_coords">Coordonnées</string>
+    <string name="use_gps_title">Utiliser le GPS de l\'appareil</string>
+    <string name="current_reading_format">Relevé actuel : %1$s</string>
+    <string name="iconic_cities_title">Villes historiques emblématiques :</string>
+    <string name="custom_coords_prompt">Entrez des coordonnées pour découvrir l\'histoire oubliée aux alentours :</string>
+    <string name="location_name_label">Nom / Libellé du lieu</string>
+    <string name="location_name_placeholder">ex. Carthage Antique</string>
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="explore_location_button">Explorer ce lieu</string>
+    <string name="error_invalid_coordinates">Veuillez saisir une latitude et une longitude numériques valides.</string>
+    <string name="error_coordinate_bounds">La latitude doit être entre -90 et 90 et la longitude entre -180 et 180.</string>
+
+    <!-- Catégories -->
+    <string name="cat_monument">Monument &amp; Mémorial</string>
+    <string name="cat_event">Événement / Site historique</string>
+    <string name="cat_architecture">Architecture &amp; Forteresse</string>
+    <string name="cat_sacred">Lieu sacré &amp; Temple</string>
+    <string name="cat_figure">Figure historique</string>
+    <string name="cat_general">Patrimoine &amp; Repère</string>
+
+    <!-- Langue -->
+    <string name="language_dialog_title">Sélectionner la langue du circuit</string>
+    <string name="select_language">Langue</string>
+
+    <!-- Préréglages -->
+    <string name="preset_rome_name">Rome : Colisée &amp; Forums Impériaux</string>
+    <string name="preset_rome_desc">Cœur de l\'Empire romain, temples antiques, arcs de triomphe et arènes de gladiateurs.</string>
+    <string name="preset_london_name">Londres : Tour &amp; Cité Antique</string>
+    <string name="preset_london_desc">Forteresses médiévales, vestiges du mur romain et patrimoine de la Tamise.</string>
+    <string name="preset_boston_name">Boston : Freedom Trail</string>
+    <string name="preset_boston_desc">Berceau de la Révolution américaine, maisons d\'assemblée et anciens cimetières.</string>
+    <string name="preset_paris_name">Paris : Quartier Latin &amp; Notre-Dame</string>
+    <string name="preset_paris_desc">Thermes gallo-romains, universités médiévales, Panthéon et Île de la Cité.</string>
+    <string name="preset_kyoto_name">Kyoto : Gion &amp; Higashiyama</string>
+    <string name="preset_kyoto_desc">Pagodes séculaires en bois, sanctuaires impériaux et quartiers samouraïs.</string>
+    <string name="preset_athens_name">Athènes : Acropole &amp; Plaka</string>
+    <string name="preset_athens_desc">Berceau de la démocratie, Parthénon, agora antique et ruelles historiques.</string>
+    <string name="preset_philly_name">Philadelphie : Independence Mall</string>
+    <string name="preset_philly_desc">Independence Hall, Cloche de la Liberté et ruelles pavées de l\'époque coloniale.</string>
+    <string name="preset_cairo_name">Le Caire : Citadelle &amp; Portes Anciennes</string>
+    <string name="preset_cairo_desc">Architecture islamique médiévale, citadelle de Saladin et minarets millénaires.</string>
+
+    <!-- Dashboard -->
+    <string name="nav_dashboard">Tableau de bord</string>
+    <string name="dashboard_title">Tableau de bord de l\'explorateur</string>
+    <string name="total_distance_covered">Distance totale</string>
+    <string name="landmarks_visited_count">Visités</string>
+    <string name="exploration_time">Temps d\'exploration</string>
+    <string name="category_breakdown">Répartition par catégorie</string>
+    <string name="recent_activity">Découvertes récentes</string>
+    <string name="distance_format_km">%1$.1f km</string>
+    <string name="time_format_hours_mins">%1$d h %2$d min</string>
+    <string name="time_format_mins">%1$d min</string>
+    <string name="no_activity_dashboard">Aucune activité d\'exploration. Visitez des monuments lors de vos balades !</string>
+
+    <!-- Share Progress -->
+    <string name="share_progress">Partager le progrès</string>
+    <string name="share_progress_subtitle">Exporter la carte de résumé vers les réseaux sociaux ou messageries</string>
+    <string name="share_card_subtitle">Découverte historique à pied</string>
+    <string name="share_tour_summary_title">Résumé de balade GeoChronicle</string>
+    <string name="share_chooser_title">Partager le progrès de la balade</string>
+    <string name="share_button_card">Partager la carte résumé</string>
+    <string name="share_button_text">Partager le résumé texte</string>
+    <string name="share_completed_stops_format">%1$d sur %2$d étapes visitées (%3$d%%)</string>
+    <string name="share_stops_format">%1$d/%2$d étapes (%3$d%%)</string>
+    <string name="share_highlights_title">Monuments phares visités</string>
+    <string name="share_no_highlights">Explorez des lieux le long du parcours pour débloquer vos étapes phares !</string>
+    <string name="share_quote">L\'histoire s\'écrit un pas après l\'autre.</string>
+    <string name="share_text_header">🏛️ Mon résumé de balade GeoChronicle !</string>
+    <string name="share_text_tour">📍 Circuit</string>
+    <string name="share_text_distance">🗺️ Distance totale</string>
+    <string name="share_text_visited">🏛️ Monuments visités</string>
+    <string name="share_text_time">⏱️ Temps d\'exploration</string>
+    <string name="share_text_highlights">Découvertes majeures :</string>
+    <string name="share_text_footer">Exploré à pied avec GeoChronicle 🚶‍♂️✨</string>
+    <!-- New General, Splash & Formats -->
+    <string name="share_badge_tour">🏛️ PARCOURS GEOCHRONICLE</string>
+    <string name="share_footer_brand">🌐 GeoChronicle • Découvrez l\'histoire à pied</string>
+    <string name="progress_percentage_format">%1%%</string>
+    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="selected_label">Sélectionné</string>
+    <string name="splash_title">GeoChronicle</string>
+    <string name="splash_tagline">Explorez l\'histoire oubliée à pied</string>
+    <string name="radius_meter_format">%1</string>
+    <string name="radius_km_format">%1</string>
+    <string name="category_with_emoji_format">%1 %2</string>
+
+    <!-- Système de don -->
+    <string name="donation_dialog_title">Soutenir le développement de GeoChronicle</string>
+    <string name="donation_dialog_subtitle">Découverte historique 100% sans publicité et indépendante</string>
+    <string name="donation_active_supporter_badge">Soutien actif</string>
+    <string name="donation_thank_you_title">Merci pour votre soutien ! ❤️</string>
+    <string name="donation_thank_you_desc">Votre contribution permet à GeoChronicle de rester 100% sans publicité et indépendant.</string>
+    <string name="donation_tab_google_play">Google Play</string>
+    <string name="donation_tab_paypal">PayPal &amp; QR</string>
+    <string name="donation_tab_kofi">Tirelire Ko-fi</string>
+    <string name="donation_tier1_title">Niveau 1 — Offrir un café</string>
+    <string name="donation_tier1_price">1,99 $</string>
+    <string name="donation_tier1_desc">Aide pour un café de développement ☕</string>
+    <string name="donation_tier2_title">Niveau 2 — Déjeuner dev</string>
+    <string name="donation_tier2_price">4,99 $</string>
+    <string name="donation_tier2_desc">Soutient les nouvelles fonctionnalités et cartes 🍕</string>
+    <string name="donation_tier3_title">Niveau 3 — Passionné d\'histoire</string>
+    <string name="donation_tier3_price">9,99 $</string>
+    <string name="donation_tier3_desc">Enrichit les parcours historiques et guides 🚀</string>
+    <string name="donation_tier4_title">Niveau 4 — Grand mécène</string>
+    <string name="donation_tier4_price">19,99 $</string>
+    <string name="donation_tier4_desc">Sponsorise le projet et badge permanent 🏆</string>
+    <string name="donation_play_button_format">Contribuer %1$s via Google Play</string>
+    <string name="donation_paypal_select_amount">Sélectionner le montant :</string>
+    <string name="donation_paypal_amount_3">3 $</string>
+    <string name="donation_paypal_amount_5">5 $</string>
+    <string name="donation_paypal_amount_10">10 $</string>
+    <string name="donation_paypal_custom_amount">Personnalisé ($)</string>
+    <string name="donation_paypal_qr_instructions">Scannez le QR code pour faire un don via PayPal :</string>
+    <string name="donation_paypal_open_button">Ouvrir lien PayPal</string>
+    <string name="donation_paypal_copy_button">Copier le lien</string>
+    <string name="donation_paypal_copied_toast">Lien PayPal copié dans le presse-papiers !</string>
+    <string name="donation_kofi_desc">Vous préférez le Web ? Senez le projet sur notre page Ko-fi !</string>
+    <string name="donation_kofi_button">Visiter Ko-fi</string>
+    <string name="donation_confirm_payment">Débloquer le badge de soutien</string>
+    <string name="donation_home_banner_title">Vous aimez GeoChronicle ?</string>
+    <string name="donation_home_banner_desc">Soutenez une découverte historique indépendante et 100% sans pub.</string>
+    <string name="donation_home_banner_button">Soutenir le dev ☕</string>
+    <string name="donation_value_card_title">Cette appli vous a aidé ?</string>
+    <string name="donation_value_card_desc">Offrez un café au développeur pour garder l\'appli sans publicité !</string>
+    <string name="donation_value_card_button">Offrir un café ☕</string>
+    <string name="donation_about_title">Soutenir le développement indépendant</string>
+    <string name="donation_about_privacy_note">GeoChronicle est 100% sans publicité et respecte votre vie privée.</string>
+    <string name="donation_unlocked_toast">Merci ! Badge de soutien débloqué.</string>
+    <string name="donation_activated_toast">Statut de soutien activé !</string>
+    <string name="donation_processing_payment">Paiement 1-Tap en cours…</string>
+    <string name="donation_enter_amount_label">Entrer le montant ($)</string>
+    <string name="donation_paypal_link_label">Lien PayPal</string>
+    <string name="donation_kofi_header">☕ Tirelire Ko-fi</string>
+    <string name="lat_placeholder">41.8902</string>
+    <string name="lon_placeholder">12.4922</string>
+</resources>
+

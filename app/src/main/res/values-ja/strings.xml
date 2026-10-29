@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">GeoChronicle</string>
+    <string name="top_bar_title">GeoChronicle</string>
+    <string name="radius_and_stops_format">探索半径：%1$s • %2$d か所</string>
+    <string name="my_gps_location">現在地 (GPS)</string>
+    <string name="refresh_history_walk">歴史散歩を更新</string>
+    <string name="change_location">場所を変更</string>
+    <string name="current_gps_location">現在のGPS位置</string>
+    <string name="live_walker_coordinates">現在地の歩行座標</string>
+    <string name="custom_coordinates">カスタム座標</string>
+    <string name="historic_district">歴史地区</string>
+
+    <!-- ナビゲーションタブ -->
+    <string name="nav_radar">レーダー</string>
+    <string name="nav_discover">見つける</string>
+    <string name="nav_walk_tour">歴史散歩</string>
+    <string name="nav_journal">記録帳</string>
+
+    <!-- レーダー -->
+    <string name="radar_scope_label">レーダー範囲</string>
+    <string name="route_trail">散策ルート</string>
+    <string name="all_stops">すべての地点</string>
+    <string name="connection_error">接続エラー</string>
+    <string name="retry_discovery">再検索する</string>
+    <string name="listen_to_story">物語を聴く</string>
+    <string name="pause_narration">ナレーション一時停止</string>
+    <string name="narrate_story">物語を再生</string>
+
+    <!-- 見つける -->
+    <string name="search_placeholder">記念碑、偉人、古戦場を検索…</string>
+    <string name="clear_search">検索をクリア</string>
+    <string name="all_filter_format">すべて (%1$d)</string>
+    <string name="no_landmarks_found_title">条件に合う歴史的遺産が見つかりませんでした。</string>
+    <string name="no_landmarks_found_subtitle">探索半径を広げるか、フィルターを解除してください。</string>
+
+    <!-- 歴史散歩ツアー -->
+    <string name="historical_walking_tour">歴史ウォーキングツアー</string>
+    <string name="tour_progress_format">進捗：%1$d / %2$d か所訪問済み</string>
+    <string name="hands_free_walking_guide">ハンズフリー音声ガイド</string>
+    <string name="auto_narrate_subtitle">最寄りの歴史エピソードを自動再生</string>
+    <string name="chronological_itinerary">散歩ルート順序</string>
+
+    <!-- 記録帳 -->
+    <string name="saved_offline_format">オフライン保存 (%1$d)</string>
+    <string name="visited_journal_format">訪問記録 (%1$d)</string>
+    <string name="no_saved_walks_title">オフライン保存された遺産はありません</string>
+    <string name="no_saved_walks_desc">ブックマークしておくと、散歩中にインターネット接続がなくても歴史の解説を楽しめます。</string>
+    <string name="no_visited_places_title">まだ訪問した場所の記録がありません</string>
+    <string name="no_visited_places_desc">散策中にチェックを入れて訪問済みに登録し、自分だけの探訪記録を作りましょう。</string>
+
+    <!-- 詳細シート -->
+    <string name="historical_audio_narration">歴史音声ナレーション</string>
+    <string name="narrating_audio_guide">音声ガイド再生中…</string>
+    <string name="audio_guide_paused">音声ガイド一時停止中</string>
+    <string name="historical_chronicle_title">歴史年代記</string>
+    <string name="action_save">保存</string>
+    <string name="action_saved">保存済み</string>
+    <string name="action_visited">訪問済み</string>
+    <string name="action_unvisited">未訪問</string>
+    <string name="action_directions">道順・地図</string>
+    <string name="action_wikipedia">Wikipedia</string>
+    <string name="walkers_field_notes">旅人のフィールドノート</string>
+    <string name="field_notes_placeholder">個人の観察、写真の思い出、散策の感想を記録…</string>
+    <string name="field_notes_empty">まだノートがありません。編集をタップして発見を書き留めましょう。</string>
+    <string name="save_note">ノートを保存</string>
+    <string name="edit_note">ノートを編集</string>
+    <string name="close">閉じる</string>
+    <string name="speed_format">%1$sx</string>
+
+    <!-- 音声バー -->
+    <string name="narrating_walking_tour">散策ガイドを朗読中</string>
+    <string name="stop_narration">朗読を停止</string>
+
+    <!-- 場所選択ダイアログ -->
+    <string name="choose_location_title">散歩する歴史の街を選択</string>
+    <string name="tab_walk_hubs">世界の歴史都市</string>
+    <string name="tab_custom_coords">座標指定</string>
+    <string name="use_gps_title">端末のGPSを使用</string>
+    <string name="current_reading_format">現在地：%1$s</string>
+    <string name="iconic_cities_title">代表的な歴史散歩コース：</string>
+    <string name="custom_coords_prompt">緯度経度を入力して、周辺に眠る忘れられた歴史を発見：</string>
+    <string name="location_name_label">場所の名前・ラベル</string>
+    <string name="location_name_placeholder">例：古代カルタゴ</string>
+    <string name="latitude_label">緯度</string>
+    <string name="longitude_label">経度</string>
+    <string name="explore_location_button">この場所を探索</string>
+    <string name="error_invalid_coordinates">正しい数値の緯度と経度を入力してください。</string>
+    <string name="error_coordinate_bounds">緯度は-90〜90、経度は-180〜180の間で入力してください。</string>
+
+    <!-- カテゴリ -->
+    <string name="cat_monument">記念碑・モニュメント</string>
+    <string name="cat_event">歴史的事件・旧跡</string>
+    <string name="cat_architecture">歴史建築・城郭</string>
+    <string name="cat_sacred">寺社仏閣・聖地</string>
+    <string name="cat_figure">歴史的人物</string>
+    <string name="cat_general">文化遺産・名所</string>
+
+    <!-- 言語 -->
+    <string name="language_dialog_title">ツアー言語の選択</string>
+    <string name="select_language">言語</string>
+
+    <!-- プリセット都市 -->
+    <string name="preset_rome_name">ローマ：コロッセオとフォロ・ロマーノ</string>
+    <string name="preset_rome_desc">古代ローマ帝国の中心。神殿、凱旋門、剣闘士の闘技場が連なる名所。</string>
+    <string name="preset_london_name">ロンドン：ロンドン塔と古代都市</string>
+    <string name="preset_london_desc">中世の要塞、古代ローマ城壁の遺跡、テムズ川沿いの歴史遺産。</string>
+    <string name="preset_boston_name">ボストン：フリーダムトレイル</string>
+    <string name="preset_boston_desc">アメリカ独立革命の舞台、歴史的集会所、古い墓地を巡る道。</string>
+    <string name="preset_paris_name">パリ：カルチェ・ラタンとノートルダム</string>
+    <string name="preset_paris_desc">古代ローマ浴場、中世大学、パンテオン、シテ島の歴史探訪。</string>
+    <string name="preset_kyoto_name">京都：祇園・東山</string>
+    <string name="preset_kyoto_desc">幾百年の歴史を持つ木造五重塔、神社仏閣、風情ある町並み。</string>
+    <string name="preset_athens_name">アテネ：アクロポリスとプラカ</string>
+    <string name="preset_athens_desc">民主主義発祥の地、パルテノン神殿、古代アゴラ、歴史ある路地。</string>
+    <string name="preset_philly_name">フィラデルフィア：インディペンデンス・モール</string>
+    <string name="preset_philly_desc">独立記念館、自由の鐘、石畳が残る植民地時代の面影。</string>
+    <string name="preset_cairo_name">カイロ：城塞と千年の古門</string>
+    <string name="preset_cairo_desc">中世イスラム建築、サラディンのシタデル、そびえるミナレット。</string>
+
+    <!-- Dashboard -->
+    <string name="nav_dashboard">ダッシュボード</string>
+    <string name="dashboard_title">探検者アクティビティ</string>
+    <string name="total_distance_covered">総移動距離</string>
+    <string name="landmarks_visited_count">訪問済み</string>
+    <string name="exploration_time">探索時間</string>
+    <string name="category_breakdown">カテゴリー別内訳</string>
+    <string name="recent_activity">最近の発見</string>
+    <string name="distance_format_km">%1$.1f km</string>
+    <string name="time_format_hours_mins">%1$d時間%2$d分</string>
+    <string name="time_format_mins">%1$d分</string>
+    <string name="no_activity_dashboard">まだ探索記録がありません。散策中に史跡を訪れてみましょう！</string>
+
+    <!-- Share Progress -->
+    <string name="share_progress">進捗をシェア</string>
+    <string name="share_progress_subtitle">サマリーカードをSNSやメッセージアプリに書き出し</string>
+    <string name="share_card_subtitle">徒歩で巡る歴史の旅</string>
+    <string name="share_tour_summary_title">GeoChronicle ツアーサマリー</string>
+    <string name="share_chooser_title">ツアーの進捗を共有</string>
+    <string name="share_button_card">サマリーカードを共有</string>
+    <string name="share_button_text">テキストサマリーを共有</string>
+    <string name="share_completed_stops_format">%2$d箇所中%1$d箇所の史跡を訪問 (%3$d%%)</string>
+    <string name="share_stops_format">%1$d/%2$d箇所 (%3$d%%)</string>
+    <string name="share_highlights_title">訪問したハイライト史跡</string>
+    <string name="share_no_highlights">ルート沿いの史跡を巡ってハイライトをアンロック！</string>
+    <string name="share_quote">歴史は一歩一歩刻まれる。</string>
+    <string name="share_text_header">🏛️ 私のGeoChronicle歴史散策サマリー！</string>
+    <string name="share_text_tour">📍 ツアー</string>
+    <string name="share_text_distance">🗺️ 総移動距離</string>
+    <string name="share_text_visited">🏛️ 訪問した史跡</string>
+    <string name="share_text_time">⏱️ 探索時間</string>
+    <string name="share_text_highlights">主な発見：</string>
+    <string name="share_text_footer">GeoChronicleで歩いて探索 🚶‍♂️✨</string>
+    <!-- New General, Splash & Formats -->
+    <string name="share_badge_tour">🏛️ ジオクロニクルツアー</string>
+    <string name="share_footer_brand">🌐 GeoChronicle • 歩いて巡る歴史の旅</string>
+    <string name="progress_percentage_format">%1%%</string>
+    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="selected_label">選択中</string>
+    <string name="splash_title">GeoChronicle</string>
+    <string name="splash_tagline">歩いて歴史の記憶を巡る</string>
+    <string name="radius_meter_format">%1</string>
+    <string name="radius_km_format">%1</string>
+    <string name="category_with_emoji_format">%1 %2</string>
+
+    <!-- 寄付システム -->
+    <string name="donation_dialog_title">GeoChronicleの開発を支援</string>
+    <string name="donation_dialog_subtitle">100%広告なし・独立した歴史探索アプリ</string>
+    <string name="donation_active_supporter_badge">アクティブサポーター</string>
+    <string name="donation_thank_you_title">ご支援ありがとうございます！ ❤️</string>
+    <string name="donation_thank_you_desc">皆様のご支援により、GeoChronicleは100%広告なしで独立した開発を継続できます。</string>
+    <string name="donation_tab_google_play">Google Play</string>
+    <string name="donation_tab_paypal">PayPal &amp; QR</string>
+    <string name="donation_tab_kofi">Ko-fi</string>
+    <string name="donation_tier1_title">ティア 1 — コーヒーを1杯おごる</string>
+    <string name="donation_tier1_price">$1.99</string>
+    <string name="donation_tier1_desc">開発用のコーヒー代を支援 ☕</string>
+    <string name="donation_tier2_title">ティア 2 — 開発者のランチ</string>
+    <string name="donation_tier2_price">$4.99</string>
+    <string name="donation_tier2_desc">マップ新機能やバグ修正を支援 🍕</string>
+    <string name="donation_tier3_title">ティア 3 — 歴史ファン</string>
+    <string name="donation_tier3_price">$9.99</string>
+    <string name="donation_tier3_desc">歴史散策ルートや音声ガイドの拡充 🚀</string>
+    <string name="donation_tier4_title">ティア 4 — マスターパトロン</string>
+    <string name="donation_tier4_price">$19.99</string>
+    <string name="donation_tier4_desc">アプリ開発のメインスポンサー &amp; 永久バッジ 🏆</string>
+    <string name="donation_play_button_format">Google Play経由で %1$s を支援</string>
+    <string name="donation_paypal_select_amount">支援額を選択：</string>
+    <string name="donation_paypal_amount_3">$3</string>
+    <string name="donation_paypal_amount_5">$5</string>
+    <string name="donation_paypal_amount_10">$10</string>
+    <string name="donation_paypal_custom_amount">金額指定 ($)</string>
+    <string name="donation_paypal_qr_instructions">QRコードをカメラで読み取りPayPalで即座に寄付：</string>
+    <string name="donation_paypal_open_button">PayPalリンクを開く</string>
+    <string name="donation_paypal_copy_button">リンクをコピー</string>
+    <string name="donation_paypal_copied_toast">PayPalリンクをクリップボードにコピーしました！</string>
+    <string name="donation_kofi_desc">Webでの支援をご希望ですか？公式Ko-fiページで直接支援できます。</string>
+    <string name="donation_kofi_button">Ko-fiページへ</string>
+    <string name="donation_confirm_payment">サポーターバッジを解除</string>
+    <string name="donation_home_banner_title">GeoChronicleをお楽しみですか？</string>
+    <string name="donation_home_banner_desc">広告なしで快適な歴史散策アプリの開発をご支援ください。</string>
+    <string name="donation_home_banner_button">開発者を支援 ☕</string>
+    <string name="donation_value_card_title">アプリは役立ちましたか？</string>
+    <string name="donation_value_card_desc">開発者にコーヒーを一杯おごって、広告なしのアプリ運営を支援しましょう！</string>
+    <string name="donation_value_card_button">コーヒーをおごる ☕</string>
+    <string name="donation_about_title">個人開発を支援する</string>
+    <string name="donation_about_privacy_note">GeoChronicleは100%広告なし・プライバシー尊重のアプリです。</string>
+    <string name="donation_unlocked_toast">ありがとうございます！サポーターバッジが解除されました。</string>
+    <string name="donation_activated_toast">サポーターキーが有効化されました！</string>
+    <string name="donation_processing_payment">ワンタップ決済処理中…</string>
+    <string name="donation_enter_amount_label">金額を入力 ($)</string>
+    <string name="donation_paypal_link_label">PayPalリンク</string>
+    <string name="donation_kofi_header">☕ Ko-fi 投げ銭</string>
+    <string name="lat_placeholder">41.8902</string>
+    <string name="lon_placeholder">12.4922</string>
+</resources>
+

@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">GeoChronicle</string>
+    <string name="top_bar_title">GeoChronicle</string>
+    <string name="radius_and_stops_format">探索半径：%1$s • %2$d 处古迹</string>
+    <string name="my_gps_location">我的GPS位置</string>
+    <string name="refresh_history_walk">刷新历史漫步</string>
+    <string name="change_location">更换地点</string>
+    <string name="current_gps_location">当前GPS位置</string>
+    <string name="live_walker_coordinates">实时漫步坐标</string>
+    <string name="custom_coordinates">自定义经纬度</string>
+    <string name="historic_district">历史街区</string>
+
+    <!-- 导航标签 -->
+    <string name="nav_radar">雷达</string>
+    <string name="nav_discover">发现</string>
+    <string name="nav_walk_tour">漫步路线</string>
+    <string name="nav_journal">漫游志</string>
+
+    <!-- 雷达 -->
+    <string name="radar_scope_label">雷达探测范围</string>
+    <string name="route_trail">步行路线</string>
+    <string name="all_stops">所有地点</string>
+    <string name="connection_error">连接错误</string>
+    <string name="retry_discovery">重新检索</string>
+    <string name="listen_to_story">聆听历史故事</string>
+    <string name="pause_narration">暂停朗读</string>
+    <string name="narrate_story">语音讲解</string>
+
+    <!-- 发现 -->
+    <string name="search_placeholder">搜索纪念碑、历史人物、战役遗址…</string>
+    <string name="clear_search">清除搜索</string>
+    <string name="all_filter_format">全部 (%1$d)</string>
+    <string name="no_landmarks_found_title">未找到符合条件的历史遗迹。</string>
+    <string name="no_landmarks_found_subtitle">请尝试扩大雷达搜索半径或清除筛选条件。</string>
+
+    <!-- 漫步路线 -->
+    <string name="historical_walking_tour">历史徒步探索路线</string>
+    <string name="tour_progress_format">探索进度：%1$d / %2$d 处已踏足</string>
+    <string name="hands_free_walking_guide">免提步行语音导览</string>
+    <string name="auto_narrate_subtitle">自动朗读最近的历史古迹故事</string>
+    <string name="chronological_itinerary">推荐徒步导览行程</string>
+
+    <!-- 漫游志 -->
+    <string name="saved_offline_format">离线保存 (%1$d)</string>
+    <string name="visited_journal_format">足迹记录 (%1$d)</string>
+    <string name="no_saved_walks_title">暂无离线保存的漫步古迹</string>
+    <string name="no_saved_walks_desc">点击书签按钮收藏历史遗存，即可在漫步途中无网络离线阅读与收听。</string>
+    <string name="no_visited_places_title">尚无踏足历史地点的记录</string>
+    <string name="no_visited_places_desc">在探索漫步中打卡古迹，谱写专属于你的历史探险笔记。</string>
+
+    <!-- 详情卡片 -->
+    <string name="historical_audio_narration">历史原声朗读</string>
+    <string name="narrating_audio_guide">语音导览播放中…</string>
+    <string name="audio_guide_paused">语音导览已暂停</string>
+    <string name="historical_chronicle_title">历史纪事</string>
+    <string name="action_save">收藏</string>
+    <string name="action_saved">已收藏</string>
+    <string name="action_visited">已踏足</string>
+    <string name="action_unvisited">未踏足</string>
+    <string name="action_directions">导航路线</string>
+    <string name="action_wikipedia">维基百科</string>
+    <string name="walkers_field_notes">漫步者田野手记</string>
+    <string name="field_notes_placeholder">记录实地见闻、摄影回忆与历史思绪…</string>
+    <string name="field_notes_empty">暂未记录手记。点击编辑写下你的所见所想。</string>
+    <string name="save_note">保存手记</string>
+    <string name="edit_note">编辑手记</string>
+    <string name="close">关闭</string>
+    <string name="speed_format">%1$sx</string>
+
+    <!-- 浮动播放条 -->
+    <string name="narrating_walking_tour">正在讲解徒步导览</string>
+    <string name="stop_narration">停止讲解</string>
+
+    <!-- 选择地点对话框 -->
+    <string name="choose_location_title">选择历史漫步城市</string>
+    <string name="tab_walk_hubs">历史名城</string>
+    <string name="tab_custom_coords">自定义经纬度</string>
+    <string name="use_gps_title">使用设备GPS定位</string>
+    <string name="current_reading_format">当前定位：%1$s</string>
+    <string name="iconic_cities_title">标志性历史漫步城市：</string>
+    <string name="custom_coords_prompt">输入世界任一经纬度，探寻周围被尘封的历史：</string>
+    <string name="location_name_label">地点名称 / 标签</string>
+    <string name="location_name_placeholder">如：古代迦太基</string>
+    <string name="latitude_label">纬度</string>
+    <string name="longitude_label">经度</string>
+    <string name="explore_location_button">探索该地</string>
+    <string name="error_invalid_coordinates">请输入合法的数字经纬度。</string>
+    <string name="error_coordinate_bounds">纬度必须在-90至90之间，经度在-180至180之间。</string>
+
+    <!-- 类别 -->
+    <string name="cat_monument">纪念碑与雕像</string>
+    <string name="cat_event">历史事件 / 遗址</string>
+    <string name="cat_architecture">古建筑与要塞城堡</string>
+    <string name="cat_sacred">宗祠寺观与圣地</string>
+    <string name="cat_figure">历史风云人物</string>
+    <string name="cat_general">文化遗产与地标</string>
+
+    <!-- 语言 -->
+    <string name="language_dialog_title">选择导览语言</string>
+    <string name="select_language">语言</string>
+
+    <!-- 预设地点 -->
+    <string name="preset_rome_name">罗马：古罗马斗兽场与帝国议事广场</string>
+    <string name="preset_rome_desc">罗马帝国的心脏，古神殿、凯旋门与角斗士竞技场。</string>
+    <string name="preset_london_name">伦敦：伦敦塔与古城城垣</string>
+    <string name="preset_london_desc">中世纪堡垒要塞、古罗马城墙遗址与泰晤士河历史文脉。</string>
+    <string name="preset_boston_name">波士顿：自由之路</string>
+    <string name="preset_boston_desc">美国独立战争摇篮，老会议厅与殖民地时期古墓园。</string>
+    <string name="preset_paris_name">巴黎：拉丁区与巴黎圣母院</string>
+    <string name="preset_paris_desc">古罗马浴场、中世纪大学、先贤祠与西岱岛历史寻踪。</string>
+    <string name="preset_kyoto_name">京都：祇园与东山古风</string>
+    <string name="preset_kyoto_desc">数百年木造古塔、皇家庭院古刹与武士古街。</string>
+    <string name="preset_athens_name">雅典：卫城与普拉卡</string>
+    <string name="preset_athens_desc">民主发源地，帕特农神庙、古代阿哥拉集市与石阶小巷。</string>
+    <string name="preset_philly_name">费城：独立国家历史公园</string>
+    <string name="preset_philly_desc">独立宫、自由钟与漫步殖民时代的鹅卵石小道。</string>
+    <string name="preset_cairo_name">开罗：萨拉丁城堡与千年古门</string>
+    <string name="preset_cairo_desc">中世纪伊斯兰建筑群、萨拉丁古城堡与千塔之城的宣礼塔。</string>
+
+    <!-- Dashboard -->
+    <string name="nav_dashboard">仪表盘</string>
+    <string name="dashboard_title">探索者活动仪表盘</string>
+    <string name="total_distance_covered">总行程</string>
+    <string name="landmarks_visited_count">已探访</string>
+    <string name="exploration_time">探索时长</string>
+    <string name="category_breakdown">类别分布</string>
+    <string name="recent_activity">近期发现</string>
+    <string name="distance_format_km">%1$.1f 公里</string>
+    <string name="time_format_hours_mins">%1$d小时%2$d分</string>
+    <string name="time_format_mins">%1$d分钟</string>
+    <string name="no_activity_dashboard">暂无探索记录。在散步中探访历史地标，充实您的仪表盘！</string>
+
+    <!-- Share Progress -->
+    <string name="share_progress">分享进度</string>
+    <string name="share_progress_subtitle">将总结卡片导出至社交媒体或即时通讯应用</string>
+    <string name="share_card_subtitle">徒步探寻历史脉络</string>
+    <string name="share_tour_summary_title">GeoChronicle 徒步游成果总结</string>
+    <string name="share_chooser_title">分享徒步导览进度</string>
+    <string name="share_button_card">分享总结卡片</string>
+    <string name="share_button_text">分享文本总结</string>
+    <string name="share_completed_stops_format">已探访 %2$d 个地标中的 %1$d 个 (%3$d%%)</string>
+    <string name="share_stops_format">%1$d/%2$d 个地标 (%3$d%%)</string>
+    <string name="share_highlights_title">探访亮点地标</string>
+    <string name="share_no_highlights">沿路线探访地标即可解锁精彩亮点！</string>
+    <string name="share_quote">历史由每一步丈量而成。</string>
+    <string name="share_text_header">🏛️ 我的 GeoChronicle 历史漫步成就总结！</string>
+    <string name="share_text_tour">📍 导览路线</string>
+    <string name="share_text_distance">🗺️ 总行程</string>
+    <string name="share_text_visited">🏛️ 探访地标</string>
+    <string name="share_text_time">⏱️ 探索时长</string>
+    <string name="share_text_highlights">精彩发现：</string>
+    <string name="share_text_footer">使用 GeoChronicle 徒步探索 🚶‍♂️✨</string>
+    <!-- New General, Splash & Formats -->
+    <string name="share_badge_tour">🏛️ GEOCHRONICLE 漫步之旅</string>
+    <string name="share_footer_brand">🌐 GeoChronicle • 用脚步发现历史</string>
+    <string name="progress_percentage_format">%1%%</string>
+    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="selected_label">已选择</string>
+    <string name="splash_title">GeoChronicle</string>
+    <string name="splash_tagline">用脚步重温被遗忘的历史</string>
+    <string name="radius_meter_format">%1米</string>
+    <string name="radius_km_format">%1公里</string>
+    <string name="category_with_emoji_format">%1 %2</string>
+
+    <!-- 赞助系统 -->
+    <string name="donation_dialog_title">支持 GeoChronicle 开发</string>
+    <string name="donation_dialog_subtitle">100% 无广告、独立开发的历史探索应用</string>
+    <string name="donation_active_supporter_badge">活跃赞助者</string>
+    <string name="donation_thank_you_title">感谢您的慷慨赞助！ ❤️</string>
+    <string name="donation_thank_you_desc">您的支持有助于保持 GeoChronicle 100% 无广告并保持独立开发。</string>
+    <string name="donation_tab_google_play">Google Play</string>
+    <string name="donation_tab_paypal">PayPal 与 QR 码</string>
+    <string name="donation_tab_kofi">Ko-fi 赞赏</string>
+    <string name="donation_tier1_title">档位 1 — 请喝一杯咖啡</string>
+    <string name="donation_tier1_price">$1.99</string>
+    <string name="donation_tier1_desc">资助开发者的一杯咖啡 ☕</string>
+    <string name="donation_tier2_title">档位 2 — 开发者午餐</string>
+    <string name="donation_tier2_price">$4.99</string>
+    <string name="donation_tier2_desc">支持地图新功能与修复 🍕</string>
+    <string name="donation_tier3_title">档位 3 — 历史爱好者</string>
+    <string name="donation_tier3_price">$9.99</string>
+    <string name="donation_tier3_desc">扩展历史徒步路线与语音指南 🚀</string>
+    <string name="donation_tier4_title">档位 4 — 首席赞助人</string>
+    <string name="donation_tier4_price">$19.99</string>
+    <string name="donation_tier4_desc">赞助核心开发并获得永久勋章 🏆</string>
+    <string name="donation_play_button_format">通过 Google Play 赞助 %1$s</string>
+    <string name="donation_paypal_select_amount">选择赞助金额：</string>
+    <string name="donation_paypal_amount_3">$3</string>
+    <string name="donation_paypal_amount_5">$5</string>
+    <string name="donation_paypal_amount_10">$10</string>
+    <string name="donation_paypal_custom_amount">自定义 ($)</string>
+    <string name="donation_paypal_qr_instructions">使用手机相机扫描二维码即可通过 PayPal 赞助：</string>
+    <string name="donation_paypal_open_button">打开 PayPal 链接</string>
+    <string name="donation_paypal_copy_button">复制链接</string>
+    <string name="donation_paypal_copied_toast">PayPal 链接已复制到剪贴板！</string>
+    <string name="donation_kofi_desc">偏好网页赞赏？可以在我们的 Ko-fi 页面直接赞助。</string>
+    <string name="donation_kofi_button">访问 Ko-fi 页面</string>
+    <string name="donation_confirm_payment">解锁赞助者勋章</string>
+    <string name="donation_home_banner_title">喜欢 GeoChronicle 吗？</string>
+    <string name="donation_home_banner_desc">支持独立、100% 无广告的历史探索之旅。</string>
+    <string name="donation_home_banner_button">支持开发者 ☕</string>
+    <string name="donation_value_card_title">对您的探索有帮助吗？</string>
+    <string name="donation_value_card_desc">请开发者喝杯咖啡，支持应用无广告运营！</string>
+    <string name="donation_value_card_button">请喝咖啡 ☕</string>
+    <string name="donation_about_title">支持独立开发</string>
+    <string name="donation_about_privacy_note">GeoChronicle 100% 无广告，尊重用户隐私。</string>
+    <string name="donation_unlocked_toast">非常感谢！赞助者勋章已解锁。</string>
+    <string name="donation_activated_toast">赞助者状态已激活！</string>
+    <string name="donation_processing_payment">正在处理一键支付…</string>
+    <string name="donation_enter_amount_label">输入金额 ($)</string>
+    <string name="donation_paypal_link_label">PayPal 链接</string>
+    <string name="donation_kofi_header">☕ Ko-fi 赞赏</string>
+    <string name="lat_placeholder">41.8902</string>
+    <string name="lon_placeholder">12.4922</string>
+</resources>
+

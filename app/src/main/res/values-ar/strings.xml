@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">GeoChronicle</string>
+    <string name="top_bar_title">GeoChronicle</string>
+    <string name="radius_and_stops_format">النطاق: %1$s • %2$d معلماً</string>
+    <string name="my_gps_location">موقعي عبر GPS</string>
+    <string name="refresh_history_walk">تحديث الجولة التاريخية</string>
+    <string name="change_location">تغيير الموقع</string>
+    <string name="current_gps_location">موقع GPS الحالي</string>
+    <string name="live_walker_coordinates">إحداثيات المسار الحية</string>
+    <string name="custom_coordinates">إحداثيات مخصصة</string>
+    <string name="historic_district">منطقة تاريخية</string>
+
+    <!-- علامات التبويب -->
+    <string name="nav_radar">الرادار</string>
+    <string name="nav_discover">استكشف</string>
+    <string name="nav_walk_tour">جولة المشي</string>
+    <string name="nav_journal">السجل</string>
+
+    <!-- الرادار -->
+    <string name="radar_scope_label">نطاق الرادار</string>
+    <string name="route_trail">مسار المشي</string>
+    <string name="all_stops">جميع المعالم</string>
+    <string name="connection_error">خطأ في الاتصال</string>
+    <string name="retry_discovery">إعادة المحاولة</string>
+    <string name="listen_to_story">الاستماع للقصة</string>
+    <string name="pause_narration">إيقاف مؤقت</string>
+    <string name="narrate_story">سرد القصة</string>
+
+    <!-- استكشف -->
+    <string name="search_placeholder">ابحث عن آثار، شخصيات، معارك…</string>
+    <string name="clear_search">مسح البحث</string>
+    <string name="all_filter_format">الكل (%1$d)</string>
+    <string name="no_landmarks_found_title">لم يتم العثور على معالم تاريخية مطابقة.</string>
+    <string name="no_landmarks_found_subtitle">جرب توسيع نطاق الرادار أو مسح خيارات التصفية.</string>
+
+    <!-- جولة المشي -->
+    <string name="historical_walking_tour">جولة المشي التاريخية</string>
+    <string name="tour_progress_format">تقدم الجولة: تمت زيارة %1$d من %2$d معلماً</string>
+    <string name="hands_free_walking_guide">مرشد صوتي تلقائي أثناء المشي</string>
+    <string name="auto_narrate_subtitle">سرد قصة أقرب معلم أثري تلقائياً</string>
+    <string name="chronological_itinerary">المسار الزمني الموصى به</string>
+
+    <!-- السجل -->
+    <string name="saved_offline_format">المحفوظة بدون إنترنت (%1$d)</string>
+    <string name="visited_journal_format">سجل الزيارات (%1$d)</string>
+    <string name="no_saved_walks_title">لا توجد معالم محفوظة بعد</string>
+    <string name="no_saved_walks_desc">احفظ المعالم للوصول إلى الروايات التاريخية دون الحاجة إلى اتصال بالإنترنت أثناء جولتك.</string>
+    <string name="no_visited_places_title">لم تسجل أي زيارات بعد</string>
+    <string name="no_visited_places_desc">حدد المعالم التاريخية التي زرتها لبناء سجل استكشافاتك الشخصي.</string>
+
+    <!-- بطاقة المعلم -->
+    <string name="historical_audio_narration">السرد الصوتي التاريخي</string>
+    <string name="narrating_audio_guide">جاري تشغيل الدليل الصوتي…</string>
+    <string name="audio_guide_paused">الدليل الصوتي متوقف مؤقتاً</string>
+    <string name="historical_chronicle_title">الوقائع التاريخية</string>
+    <string name="action_save">حفظ</string>
+    <string name="action_saved">تم الحفظ</string>
+    <string name="action_visited">تمت الزيارة</string>
+    <string name="action_unvisited">لم تتم الزيارة</string>
+    <string name="action_directions">الاتجاهات</string>
+    <string name="action_wikipedia">ويكيبيديا</string>
+    <string name="walkers_field_notes">ملاحظات الرحالة</string>
+    <string name="field_notes_placeholder">سجل ملاحظاتك الشخصية، ذكريات الصور، أو انطباعاتك التاريخية…</string>
+    <string name="field_notes_empty">لا توجد ملاحظات بعد. اضغط على تعديل لتدوين اكتشافاتك.</string>
+    <string name="save_note">حفظ الملاحظة</string>
+    <string name="edit_note">تعديل الملاحظة</string>
+    <string name="close">إغلاق</string>
+    <string name="speed_format">%1$sx</string>
+
+    <!-- شريط الصوت العائم -->
+    <string name="narrating_walking_tour">جاري سرد جولة المشي</string>
+    <string name="stop_narration">إيقاف السرد</string>
+
+    <!-- حوار تحديد الموقع -->
+    <string name="choose_location_title">اختر وجهة الجولة التاريخية</string>
+    <string name="tab_walk_hubs">عواصم تاريخية</string>
+    <string name="tab_custom_coords">إحداثيات خاصة</string>
+    <string name="use_gps_title">استخدام موقع GPS للجهاز</string>
+    <string name="current_reading_format">الإحداثيات الحالية: %1$s</string>
+    <string name="iconic_cities_title">مدن تاريخية بارزة:</string>
+    <string name="custom_coords_prompt">أدخل أي إحداثيات لاكتشاف التاريخ العريق المحيط بها:</string>
+    <string name="location_name_label">اسم أو تسمية الموقع</string>
+    <string name="location_name_placeholder">مثال: قرطاج القديمة</string>
+    <string name="latitude_label">خط العرض</string>
+    <string name="longitude_label">خط الطول</string>
+    <string name="explore_location_button">استكشف هذا الموقع</string>
+    <string name="error_invalid_coordinates">يرجى إدخال أرقام صحيحة لخطوط الطول والعرض.</string>
+    <string name="error_coordinate_bounds">يجب أن يكون خط العرض بين -90 و 90 وخط الطول بين -180 و 180.</string>
+
+    <!-- التصنيفات -->
+    <string name="cat_monument">نصب تذكاري وأثر</string>
+    <string name="cat_event">حدث تاريخي / موقع</string>
+    <string name="cat_architecture">عمارة وحصن قديم</string>
+    <string name="cat_sacred">معلم ديني ومقدس</string>
+    <string name="cat_figure">شخصية تاريخية</string>
+    <string name="cat_general">تراث ومعلم بارز</string>
+
+    <!-- اللغة -->
+    <string name="language_dialog_title">اختر لغة الجولة</string>
+    <string name="select_language">اللغة</string>
+
+    <!-- المدن الجاهزة -->
+    <string name="preset_rome_name">روما: الكولوسيوم والمنتدى الروماني</string>
+    <string name="preset_rome_desc">قلب الإمبراطورية الرومانية، المعابد القديمة، أقواس النصر وحلبات المصارعين.</string>
+    <string name="preset_london_name">لندن: برج لندن والمدينة القديمة</string>
+    <string name="preset_london_desc">قلاع القرون الوسطى، بقايا السور الروماني وتراث ضفاف نهر التيمز.</string>
+    <string name="preset_boston_name">بوسطن: درب الحرية</string>
+    <string name="preset_boston_desc">مهد الثورة الأمريكية، دور الاجتماعات التاريخية والمقابر العتيقة.</string>
+    <string name="preset_paris_name">باريس: الحي اللاتيني ونوتردام</string>
+    <string name="preset_paris_desc">الحمامات الرومانية، الجامعات العريقة، البانثيون وجزيرة إيل دو لا سيتي.</string>
+    <string name="preset_kyoto_name">كيوتو: غيون وهيغاشياما</string>
+    <string name="preset_kyoto_desc">المعابد الخشبية التاريخية، أضرحة الأباطرة وأحياء الساموراي العريقة.</string>
+    <string name="preset_athens_name">أثينا: الأكروبوليس وبلاكا</string>
+    <string name="preset_athens_desc">مهد الديمقراطية، معبد البارثينون، الأغورا القديمة والأزقة التاريخية.</string>
+    <string name="preset_philly_name">فيلادلفيا: منتزه الاستقلال</string>
+    <string name="preset_philly_desc">قاعة الاستقلال، جرس الحرية والشوارع المرصوفة بالحصى من العصر الاستعماري.</string>
+    <string name="preset_cairo_name">القاهرة: قلعة صلاح الدين والأبواب العتيقة</string>
+    <string name="preset_cairo_desc">روائع العمارة الإسلامية، قلعة صلاح الدين ومآذن مدينة الألف مئذنة.</string>
+
+    <!-- Dashboard -->
+    <string name="nav_dashboard">لوحة التحكم</string>
+    <string name="dashboard_title">لوحة نشاط المستكشف</string>
+    <string name="total_distance_covered">إجمالي المسافة</string>
+    <string name="landmarks_visited_count">تمت زيارتها</string>
+    <string name="exploration_time">وقت الاستكشاف</string>
+    <string name="category_breakdown">التصنيف حسب الفئة</string>
+    <string name="recent_activity">أحدث الاكتشافات</string>
+    <string name="distance_format_km">%1$.1f كم</string>
+    <string name="time_format_hours_mins">%1$d س %2$d د</string>
+    <string name="time_format_mins">%1$d دقيقة</string>
+    <string name="no_activity_dashboard">لا يوجد نشاط استكشافي بعد. قم بزيارة المعالم في جولاتك لملء لوحة التحكم!</string>
+
+    <!-- Share Progress -->
+    <string name="share_progress">مشاركة التقدم</string>
+    <string name="share_progress_subtitle">تصدير بطاقة الملخص إلى وسائل التواصل أو تطبيقات المراسلة</string>
+    <string name="share_card_subtitle">اكتشاف التاريخ سيراً على الأقدام</string>
+    <string name="share_tour_summary_title">ملخص جولة GeoChronicle</string>
+    <string name="share_chooser_title">مشاركة تقدم الجولة</string>
+    <string name="share_button_card">مشاركة بطاقة الملخص</string>
+    <string name="share_button_text">مشاركة ملخص نصي</string>
+    <string name="share_completed_stops_format">تمت زيارة %1$d من أصل %2$d محطة (%3$d%%)</string>
+    <string name="share_stops_format">%1$d/%2$d محطة (%3$d%%)</string>
+    <string name="share_highlights_title">أبرز المحطات التي تمت زيارتها</string>
+    <string name="share_no_highlights">استكشف المعالم على طول المسار لتسجيل أبرز المحطات!</string>
+    <string name="share_quote">التاريخ يُصنع خطوة بخطوة.</string>
+    <string name="share_text_header">🏛️ ملخص جولتي التاريخية مع GeoChronicle!</string>
+    <string name="share_text_tour">📍 الجولة</string>
+    <string name="share_text_distance">🗺️ إجمالي المسافة</string>
+    <string name="share_text_visited">🏛️ المعالم التي تمت زيارتها</string>
+    <string name="share_text_time">⏱️ وقت الاستكشاف</string>
+    <string name="share_text_highlights">أبرز الاكتشافات:</string>
+    <string name="share_text_footer">استكُشف سيراً على الأقدام عبر GeoChronicle 🚶‍♂️✨</string>
+    <!-- New General, Splash & Formats -->
+    <string name="share_badge_tour">🏛️ جولة GEOCHRONICLE</string>
+    <string name="share_footer_brand">🌐 GeoChronicle • استكشف التاريخ سيرًا على الأقدام</string>
+    <string name="progress_percentage_format">%1%%</string>
+    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="selected_label">محدد</string>
+    <string name="splash_title">GeoChronicle</string>
+    <string name="splash_tagline">استكشف التاريخ المنسي سيرًا على الأقدام</string>
+    <string name="radius_meter_format">%1 م</string>
+    <string name="radius_km_format">%1 كم</string>
+    <string name="category_with_emoji_format">%1 %2</string>
+
+    <!-- نظام التبرع -->
+    <string name="donation_dialog_title">دعم تطوير GeoChronicle</string>
+    <string name="donation_dialog_subtitle">استكشاف تاريخي مستقل وخالي تمامًا من الإعلانات 100%</string>
+    <string name="donation_active_supporter_badge">داعم نشط</string>
+    <string name="donation_thank_you_title">شكرًا جزيلاً لدعمك! ❤️</string>
+    <string name="donation_thank_you_desc">مساهمتك تساعد في بقاء GeoChronicle خاليًا من الإعلانات ومستقلاً.</string>
+    <string name="donation_tab_google_play">Google Play</string>
+    <string name="donation_tab_paypal">PayPal و QR</string>
+    <string name="donation_tab_kofi">Ko-fi</string>
+    <string name="donation_tier1_title">المستوى 1 — شراء فنجان قهوة</string>
+    <string name="donation_tier1_price">$1.99</string>
+    <string name="donation_tier1_desc">دعم فنجان قهوة للمطور ☕</string>
+    <string name="donation_tier2_title">المستوى 2 — وجبة غداء للمطور</string>
+    <string name="donation_tier2_price">$4.99</string>
+    <string name="donation_tier2_desc">دعم ميزات الخرائط والإصلاحات 🍕</string>
+    <string name="donation_tier3_title">المستوى 3 — محب للتاريخ</string>
+    <string name="donation_tier3_price">$9.99</string>
+    <string name="donation_tier3_desc">توسيع المسارات التاريخية والأدلة الصوتية 🚀</string>
+    <string name="donation_tier4_title">المستوى 4 — راعي إقليمي</string>
+    <string name="donation_tier4_price">$19.99</string>
+    <string name="donation_tier4_desc">رعاية التطوير وشارة دائمة 🏆</string>
+    <string name="donation_play_button_format">المساهمة بـ %1$s عبر Google Play</string>
+    <string name="donation_paypal_select_amount">حدد مبلغ المساهمة:</string>
+    <string name="donation_paypal_amount_3">$3</string>
+    <string name="donation_paypal_amount_5">$5</string>
+    <string name="donation_paypal_amount_10">$10</string>
+    <string name="donation_paypal_custom_amount">مخصص ($)</string>
+    <string name="donation_paypal_qr_instructions">امسح رمز QR بكاميرا الهاتف للتبرع عبر PayPal:</string>
+    <string name="donation_paypal_open_button">فتح رابط PayPal</string>
+    <string name="donation_paypal_copy_button">نسخ الرابط</string>
+    <string name="donation_paypal_copied_toast">تم نسخ رابط PayPal إلى الحافظة!</string>
+    <string name="donation_kofi_desc">تفضل الويب؟ يمكنك دعم التطوير المستقل على صفحتنا في Ko-fi!</string>
+    <string name="donation_kofi_button">زيارة Ko-fi</string>
+    <string name="donation_confirm_payment">تفعيل شارة الداعم</string>
+    <string name="donation_home_banner_title">هل تستمتع بـ GeoChronicle؟</string>
+    <string name="donation_home_banner_desc">ادعم الاستكشاف التاريخي المستقل والخالي من الإعلانات.</string>
+    <string name="donation_home_banner_button">دعم المطور ☕</string>
+    <string name="donation_value_card_title">هل كان التطبيق مفيدًا لك؟</string>
+    <string name="donation_value_card_desc">اشترِ فنجان قهوة للمطور للحفاظ على التطبيق بدون إعلانات!</string>
+    <string name="donation_value_card_button">شراء قهوة ☕</string>
+    <string name="donation_about_title">دعم التطوير المستقل</string>
+    <string name="donation_about_privacy_note">GeoChronicle خالي تمامًا من الإعلانات ويحترم خصوصيتك.</string>
+    <string name="donation_unlocked_toast">شكرًا لك! تم فتح شارة الداعم.</string>
+    <string name="donation_activated_toast">تم تفعيل حالة الداعم!</string>
+    <string name="donation_processing_payment">جاري معالجة الدفع بنقرة واحدة…</string>
+    <string name="donation_enter_amount_label">إدخال المبلغ ($)</string>
+    <string name="donation_paypal_link_label">رابط PayPal</string>
+    <string name="donation_kofi_header">☕ صندوق Ko-fi</string>
+    <string name="lat_placeholder">41.8902</string>
+    <string name="lon_placeholder">12.4922</string>
+</resources>
+
