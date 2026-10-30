@@ -19,6 +19,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.res.stringResource
+import com.example.R
 
 object QrCodeUtils {
 
@@ -174,7 +176,7 @@ fun QrCodeImage(
     ) {
         Image(
             bitmap = qrBitmap.asImageBitmap(),
-            contentDescription = "Live PayPal Donation QR Code",
+            contentDescription = stringResource(R.string.qr_content_description),
             modifier = Modifier.size(sizeDp - 24.dp)
         )
     }

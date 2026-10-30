@@ -212,5 +212,9 @@
     <string name="donation_kofi_header">☕ Tirelire Ko-fi</string>
     <string name="lat_placeholder">41.8902</string>
     <string name="lon_placeholder">12.4922</string>
+    <string name="splash_calibrating_gps">Calibrage du GPS et du radar…</string>
+    <string name="qr_content_description">Code QR de don PayPal en direct</string>
+    <string name="live_gps_tracking">Suivi GPS en direct</string>
+    <string name="live_gps_walking_mode">Mode marche actif</string>
 </resources>
 

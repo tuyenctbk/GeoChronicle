@@ -6,12 +6,16 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.audio.AudioNarrationState
 import com.example.audio.HistoryAudioNarrator
-import com.example.data.db.GeoChronicleDatabase
+import com.example.data.db.AppDatabase
+import com.example.data.db.EventEntity
+import com.example.data.db.LandmarkEntity
+import com.example.data.db.LandmarkWithEvents
 import com.example.data.model.HistoricalPlace
 import com.example.data.model.PlaceCategory
 import com.example.data.model.SupportedLanguages
 import com.example.data.model.TourLanguage
 import com.example.data.repository.HistoryRepository
+import com.example.data.repository.LandmarkRepository
 import com.example.location.HistoricalPresets
 import com.example.location.HistoricalTourLocation
 import com.example.location.LocationHelper
@@ -22,6 +26,9 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.util.Locale
+
+import com.example.location.GpsLocationService
+import kotlinx.coroutines.Job
 
 sealed interface PlacesUiState {
     data object Loading : PlacesUiState
@@ -39,8 +46,21 @@ enum class NavigationTab {
 
 class GeoChronicleViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val db = GeoChronicleDatabase.getInstance(application)
-    private val repository = HistoryRepository(db.historicalPlaceDao())
+    private val db = AppDatabase.getInstance(application)
+    val gpsService = GpsLocationService(application)
+    private var liveGpsJob: Job? = null
+    private val _isLiveGpsTracking = MutableStateFlow(false)
+    val isLiveGpsTracking: StateFlow<Boolean> = _isLiveGpsTracking.asStateFlow()
+
+    val landmarkRepository = LandmarkRepository(
+        landmarkDao = db.landmarkDao(),
+        eventDao = db.eventDao()
+    )
+    private val repository = HistoryRepository(
+        placeDao = db.historicalPlaceDao(),
+        landmarkDao = db.landmarkDao(),
+        eventDao = db.eventDao()
+    )
     val narrator = HistoryAudioNarrator(application)
     private val donationManager = com.example.data.repository.DonationManager(application)
 
@@ -89,6 +109,17 @@ class GeoChronicleViewModel(application: Application) : AndroidViewModel(applica
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
     val visitedPlaces: StateFlow<List<HistoricalPlace>> = repository.visitedPlaces
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+
+    // --- Exposed Landmark and Event Offline Streams ---
+
+    val cachedLandmarks: StateFlow<List<LandmarkEntity>> = landmarkRepository.allLandmarks
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+
+    val cachedEvents: StateFlow<List<EventEntity>> = landmarkRepository.allEvents
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+
+    val landmarksWithEvents: StateFlow<List<LandmarkWithEvents>> = landmarkRepository.landmarksWithEvents
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
     init {
@@ -193,7 +224,8 @@ class GeoChronicleViewModel(application: Application) : AndroidViewModel(applica
     fun useDeviceGps(context: Context) {
         viewModelScope.launch {
             _placesUiState.value = PlacesUiState.Loading
-            val loc = LocationHelper.getCurrentLocation(context)
+            val result = gpsService.getCurrentCoordinates()
+            val loc = result.getOrNull()
             if (loc != null) {
                 val geocoded = repository.reverseGeocode(loc.latitude, loc.longitude, _tourLanguage.value.code)
                 _currentLocation.value = HistoricalTourLocation(
@@ -209,6 +241,43 @@ class GeoChronicleViewModel(application: Application) : AndroidViewModel(applica
             } else {
                 loadPlaces()
             }
+        }
+    }
+
+    fun startLiveGpsTracking() {
+        if (_isLiveGpsTracking.value) return
+        if (!gpsService.hasLocationPermission()) return
+        _isLiveGpsTracking.value = true
+        liveGpsJob?.cancel()
+        liveGpsJob = viewModelScope.launch {
+            gpsService.observeLiveLocation(intervalMs = 5000L, minDistanceMeters = 5f)
+                .collect { location ->
+                    val geocoded = repository.reverseGeocode(location.latitude, location.longitude, _tourLanguage.value.code)
+                    _currentLocation.value = HistoricalTourLocation(
+                        id = "gps",
+                        name = geocoded.ifBlank { "Current GPS Location" },
+                        region = "Device GPS",
+                        lat = location.latitude,
+                        lon = location.longitude,
+                        iconEmoji = "📍",
+                        description = "Live walker coordinates"
+                    )
+                    loadPlaces()
+                }
+        }
+    }
+
+    fun stopLiveGpsTracking() {
+        liveGpsJob?.cancel()
+        liveGpsJob = null
+        _isLiveGpsTracking.value = false
+    }
+
+    fun toggleLiveGpsTracking() {
+        if (_isLiveGpsTracking.value) {
+            stopLiveGpsTracking()
+        } else {
+            startLiveGpsTracking()
         }
     }
 
@@ -343,6 +412,32 @@ class GeoChronicleViewModel(application: Application) : AndroidViewModel(applica
         }
         if (_selectedPlaceForDetail.value?.pageId == updated.pageId) {
             _selectedPlaceForDetail.value = updated
+        }
+    }
+
+    // --- Offline Landmark and Event CRUD Methods ---
+
+    fun insertOfflineLandmark(landmark: LandmarkEntity) {
+        viewModelScope.launch {
+            landmarkRepository.insertLandmark(landmark)
+        }
+    }
+
+    fun deleteOfflineLandmark(id: Long) {
+        viewModelScope.launch {
+            landmarkRepository.deleteLandmarkById(id)
+        }
+    }
+
+    fun insertHistoricalEvent(event: EventEntity) {
+        viewModelScope.launch {
+            landmarkRepository.insertEvent(event)
+        }
+    }
+
+    fun deleteHistoricalEvent(event: EventEntity) {
+        viewModelScope.launch {
+            landmarkRepository.deleteEvent(event)
         }
     }
 

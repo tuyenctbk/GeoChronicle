@@ -92,6 +92,7 @@ import com.example.audio.AudioNarrationState
 import com.example.data.model.HistoricalPlace
 import com.example.data.model.PlaceCategory
 import com.example.location.LocationHelper
+import com.example.location.HistoricalTourLocation
 import com.example.ui.components.AudioPlayerBar
 import com.example.ui.components.HistoricalCardItem
 import com.example.ui.components.LandmarkDetailBottomSheet
@@ -398,6 +399,7 @@ fun HomeScreen(
                                 selectedPlace = activeRadarPlace,
                                 radiusMeters = radiusMeters,
                                 selectedCategory = selectedCategory,
+                                currentLocation = currentLocation,
                                 uiState = placesUiState,
                                 narrationState = narrationState,
                                 onSelectPlace = { place ->
@@ -527,6 +529,7 @@ private fun RadarTabContent(
     selectedPlace: HistoricalPlace?,
     radiusMeters: Int,
     selectedCategory: PlaceCategory?,
+    currentLocation: HistoricalTourLocation? = null,
     uiState: PlacesUiState,
     narrationState: AudioNarrationState,
     onSelectPlace: (HistoricalPlace) -> Unit,
@@ -589,7 +592,7 @@ private fun RadarTabContent(
                     FilterChip(
                         selected = showSuggestedRoute,
                         onClick = { showSuggestedRoute = !showSuggestedRoute },
-                        label = { Text("🗺️ ${stringResource(R.string.route_trail)}") },
+                        label = { Text(stringResource(R.string.route_trail_with_icon, stringResource(R.string.route_trail))) },
                         colors = FilterChipDefaults.filterChipColors(
                             selectedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
                             selectedLabelColor = MaterialTheme.colorScheme.onSecondaryContainer
@@ -611,7 +614,7 @@ private fun RadarTabContent(
                     FilterChip(
                         selected = selectedCategory == cat,
                         onClick = { onSelectCategory(cat) },
-                        label = { Text("${cat.emoji} ${stringResource(cat.stringRes)}") },
+                        label = { Text(stringResource(R.string.category_with_emoji_format, cat.emoji, stringResource(cat.stringRes))) },
                         modifier = Modifier.height(30.dp)
                     )
                 }
@@ -630,6 +633,7 @@ private fun RadarTabContent(
                 selectedPlace = selectedPlace,
                 radiusMeters = radiusMeters,
                 onPlaceSelected = onSelectPlace,
+                currentLocation = currentLocation,
                 showSuggestedRoute = showSuggestedRoute,
                 modifier = Modifier.fillMaxSize()
             )
@@ -827,7 +831,7 @@ private fun DiscoverListTabContent(
                 FilterChip(
                     selected = selectedCategory == cat,
                     onClick = { onSelectCategory(cat) },
-                    label = { Text("${cat.emoji} ${stringResource(cat.stringRes)}") }
+                    label = { Text(stringResource(R.string.category_with_emoji_format, cat.emoji, stringResource(cat.stringRes))) }
                 )
             }
         }

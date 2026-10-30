@@ -8,10 +8,24 @@
     <path android:pathData="M0,0h108v108h-108z">
         <aapt:attr name="android:fillColor">
             <gradient
-                android:angle="315"
-                android:endColor="#0B1715"
-                android:startColor="#1A332C"
+                android:angle="135"
+                android:endColor="#07131A"
+                android:startColor="#15303A"
                 android:type="linear" />
         </aapt:attr>
     </path>
+
+    <!-- Subtle radar / topographic concentric rings -->
+    <path
+        android:strokeColor="#18FFD56B"
+        android:strokeWidth="1"
+        android:pathData="M54,16 A38,38 0 1,1 53.9,16 Z" />
+    <path
+        android:strokeColor="#22FFD56B"
+        android:strokeWidth="1.2"
+        android:pathData="M54,26 A28,28 0 1,1 53.9,26 Z" />
+    <path
+        android:strokeColor="#18FFD56B"
+        android:strokeWidth="1"
+        android:pathData="M54,36 A18,18 0 1,1 53.9,36 Z" />
 </vector>

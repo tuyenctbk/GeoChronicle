@@ -212,5 +212,9 @@
     <string name="donation_kofi_header">☕ Ko-fi 投げ銭</string>
     <string name="lat_placeholder">41.8902</string>
     <string name="lon_placeholder">12.4922</string>
+    <string name="splash_calibrating_gps">GPSとレーダーを調整中…</string>
+    <string name="qr_content_description">PayPal寄付用ライブQRコード</string>
+    <string name="live_gps_tracking">ライブGPS追跡</string>
+    <string name="live_gps_walking_mode">ウォーキングモード有効</string>
 </resources>
 

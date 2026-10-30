@@ -212,5 +212,9 @@
     <string name="donation_kofi_header">☕ Propinas Ko-fi</string>
     <string name="lat_placeholder">41.8902</string>
     <string name="lon_placeholder">12.4922</string>
+    <string name="splash_calibrating_gps">Calibrazione GPS e Radar…</string>
+    <string name="qr_content_description">Codice QR donazione PayPal in tempo reale</string>
+    <string name="live_gps_tracking">Tracciamento GPS in tempo reale</string>
+    <string name="live_gps_walking_mode">Modalità camminata attiva</string>
 </resources>
 

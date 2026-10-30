@@ -212,5 +212,9 @@
     <string name="donation_kofi_header">☕ Ko-fi Kasse</string>
     <string name="lat_placeholder">41.8902</string>
     <string name="lon_placeholder">12.4922</string>
+    <string name="splash_calibrating_gps">GPS &amp; Radar werden kalibriert…</string>
+    <string name="qr_content_description">Live PayPal-Spenden-QR-Code</string>
+    <string name="live_gps_tracking">Live-GPS-Ortung</string>
+    <string name="live_gps_walking_mode">Gehmodus aktiv</string>
 </resources>
 

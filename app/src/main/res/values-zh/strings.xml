@@ -212,5 +212,9 @@
     <string name="donation_kofi_header">☕ Ko-fi 赞赏</string>
     <string name="lat_placeholder">41.8902</string>
     <string name="lon_placeholder">12.4922</string>
+    <string name="splash_calibrating_gps">正在校准 GPS 与雷达…</string>
+    <string name="qr_content_description">PayPal 实时捐赠二维码</string>
+    <string name="live_gps_tracking">实时 GPS 追踪</string>
+    <string name="live_gps_walking_mode">徒步模式已激活</string>
 </resources>
 

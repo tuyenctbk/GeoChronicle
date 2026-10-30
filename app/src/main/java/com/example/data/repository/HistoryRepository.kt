@@ -1,8 +1,12 @@
 package com.example.data.repository
 
 import com.example.data.api.ApiClient
+import com.example.data.db.EventDao
+import com.example.data.db.EventEntity
 import com.example.data.db.HistoricalPlaceDao
 import com.example.data.db.HistoricalPlaceEntity
+import com.example.data.db.LandmarkDao
+import com.example.data.db.LandmarkEntity
 import com.example.data.model.HistoricalPlace
 import com.example.data.model.PlaceCategory
 import com.example.location.LocationHelper
@@ -16,7 +20,9 @@ import kotlinx.coroutines.withContext
 import java.net.URLEncoder
 
 class HistoryRepository(
-    private val placeDao: HistoricalPlaceDao
+    private val placeDao: HistoricalPlaceDao,
+    private val landmarkDao: LandmarkDao? = null,
+    private val eventDao: EventDao? = null
 ) {
     private val mediaWikiApi = ApiClient.mediaWikiService
     private val nominatimApi = ApiClient.nominatimService
@@ -124,6 +130,29 @@ class HistoryRepository(
                 val entitiesToCache = sortedPlaces.map { HistoricalPlaceEntity.fromHistoricalPlace(it) }
                 placeDao.insertPlaces(entitiesToCache)
 
+                // Cache to LandmarkDao and EventDao for offline structured storage
+                landmarkDao?.let { lDao ->
+                    val landmarks = sortedPlaces.map { LandmarkEntity.fromHistoricalPlace(it) }
+                    lDao.insertLandmarks(landmarks)
+                }
+
+                eventDao?.let { eDao ->
+                    val eventItems = sortedPlaces.filter { it.category == PlaceCategory.EVENT }.map {
+                        EventEntity(
+                            landmarkId = it.pageId,
+                            title = it.title,
+                            date = null,
+                            era = null,
+                            description = it.extract.ifBlank { it.description },
+                            significance = it.description,
+                            sourceUrl = it.wikiUrl
+                        )
+                    }
+                    if (eventItems.isNotEmpty()) {
+                        eDao.insertEvents(eventItems)
+                    }
+                }
+
                 Result.success(sortedPlaces)
             } catch (e: Exception) {
                 try {
@@ -155,6 +184,7 @@ class HistoryRepository(
         withContext(Dispatchers.IO) {
             val newStatus = !place.isBookmarked
             placeDao.setBookmark(place.pageId, newStatus)
+            landmarkDao?.setBookmark(place.pageId, newStatus)
             val updated = place.copy(isBookmarked = newStatus)
             placeDao.insertPlace(HistoricalPlaceEntity.fromHistoricalPlace(updated))
         }
@@ -165,6 +195,7 @@ class HistoryRepository(
             val newStatus = !place.isVisited
             val timestamp = if (newStatus) System.currentTimeMillis() else null
             placeDao.setVisited(place.pageId, newStatus, timestamp)
+            landmarkDao?.setVisited(place.pageId, newStatus, timestamp)
             val updated = place.copy(isVisited = newStatus, visitedTimestamp = timestamp)
             placeDao.insertPlace(HistoricalPlaceEntity.fromHistoricalPlace(updated))
         }
@@ -173,6 +204,7 @@ class HistoryRepository(
     suspend fun saveNote(placeId: Long, note: String?) {
         withContext(Dispatchers.IO) {
             placeDao.updateNote(placeId, note?.ifBlank { null })
+            landmarkDao?.updateNotes(placeId, note?.ifBlank { null })
         }
     }
 }
