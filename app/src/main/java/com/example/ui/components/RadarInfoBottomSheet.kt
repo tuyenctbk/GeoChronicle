@@ -172,7 +172,7 @@ fun RadarInfoBottomSheet(
                         onClick = {},
                         label = {
                             Text(
-                                "📜 ${selectedEvent.era ?: "Historic Event"}",
+                                "📜 ${selectedEvent.era ?: stringResource(R.string.historic_event_default)}",
                                 color = Color(0xFFFF6B6B),
                                 fontWeight = FontWeight.Bold
                             )
@@ -353,7 +353,7 @@ fun RadarInfoBottomSheet(
                             Icon(Icons.Default.History, contentDescription = null, tint = MaterialTheme.colorScheme.onSecondaryContainer)
                             Spacer(modifier = Modifier.width(8.dp))
                             Text(
-                                text = "Historical Significance",
+                                text = stringResource(R.string.historical_significance_title),
                                 style = MaterialTheme.typography.titleSmall,
                                 fontWeight = FontWeight.Bold,
                                 color = MaterialTheme.colorScheme.onSecondaryContainer

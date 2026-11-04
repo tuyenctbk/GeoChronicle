@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.R
 import com.example.audio.AudioNarrationState
 import com.example.audio.HistoryAudioNarrator
 import com.example.data.db.AppDatabase
@@ -59,7 +60,8 @@ class GeoChronicleViewModel(application: Application) : AndroidViewModel(applica
     private val repository = HistoryRepository(
         placeDao = db.historicalPlaceDao(),
         landmarkDao = db.landmarkDao(),
-        eventDao = db.eventDao()
+        eventDao = db.eventDao(),
+        context = application
     )
     val narrator = HistoryAudioNarrator(application)
     private val donationManager = com.example.data.repository.DonationManager(application)
@@ -203,25 +205,28 @@ class GeoChronicleViewModel(application: Application) : AndroidViewModel(applica
     }
 
     fun setCustomLocation(lat: Double, lon: Double, name: String) {
+        val app = getApplication<Application>()
         _currentLocation.value = HistoricalTourLocation(
             id = "custom_${System.currentTimeMillis()}",
-            name = name,
-            region = "Custom Coordinates",
+            name = name.ifBlank { app.getString(R.string.custom_coordinates) },
+            region = app.getString(R.string.custom_coords_region),
             lat = lat,
             lon = lon,
             iconEmoji = "📍",
-            description = "Custom coordinates ($lat, $lon)"
+            description = app.getString(R.string.custom_coords_desc_format, lat.toString(), lon.toString()),
+            nameRes = if (name.isBlank()) R.string.custom_coordinates else null
         )
         loadPlaces()
         viewModelScope.launch {
             val geocoded = repository.reverseGeocode(lat, lon, _tourLanguage.value.code)
-            if (geocoded.isNotBlank() && geocoded != "Historic District") {
+            if (geocoded.isNotBlank() && geocoded != "Historic District" && geocoded != app.getString(R.string.historic_district)) {
                 _currentLocation.value = _currentLocation.value.copy(name = geocoded)
             }
         }
     }
 
     fun useDeviceGps(context: Context) {
+        val app = getApplication<Application>()
         viewModelScope.launch {
             _placesUiState.value = PlacesUiState.Loading
             val result = gpsService.getCurrentCoordinates()
@@ -230,12 +235,14 @@ class GeoChronicleViewModel(application: Application) : AndroidViewModel(applica
                 val geocoded = repository.reverseGeocode(loc.latitude, loc.longitude, _tourLanguage.value.code)
                 _currentLocation.value = HistoricalTourLocation(
                     id = "gps",
-                    name = geocoded.ifBlank { "Current GPS Location" },
-                    region = "Device GPS",
+                    name = geocoded.ifBlank { app.getString(R.string.current_gps_location) },
+                    region = app.getString(R.string.device_gps_region),
                     lat = loc.latitude,
                     lon = loc.longitude,
                     iconEmoji = "📍",
-                    description = "Live walker coordinates"
+                    description = app.getString(R.string.live_walker_coordinates),
+                    nameRes = if (geocoded.isBlank()) R.string.current_gps_location else null,
+                    descRes = R.string.live_walker_coordinates
                 )
                 loadPlaces()
             } else {
@@ -247,6 +254,7 @@ class GeoChronicleViewModel(application: Application) : AndroidViewModel(applica
     fun startLiveGpsTracking() {
         if (_isLiveGpsTracking.value) return
         if (!gpsService.hasLocationPermission()) return
+        val app = getApplication<Application>()
         _isLiveGpsTracking.value = true
         liveGpsJob?.cancel()
         liveGpsJob = viewModelScope.launch {
@@ -255,12 +263,14 @@ class GeoChronicleViewModel(application: Application) : AndroidViewModel(applica
                     val geocoded = repository.reverseGeocode(location.latitude, location.longitude, _tourLanguage.value.code)
                     _currentLocation.value = HistoricalTourLocation(
                         id = "gps",
-                        name = geocoded.ifBlank { "Current GPS Location" },
-                        region = "Device GPS",
+                        name = geocoded.ifBlank { app.getString(R.string.current_gps_location) },
+                        region = app.getString(R.string.device_gps_region),
                         lat = location.latitude,
                         lon = location.longitude,
                         iconEmoji = "📍",
-                        description = "Live walker coordinates"
+                        description = app.getString(R.string.live_walker_coordinates),
+                        nameRes = if (geocoded.isBlank()) R.string.current_gps_location else null,
+                        descRes = R.string.live_walker_coordinates
                     )
                     loadPlaces()
                 }
@@ -298,8 +308,9 @@ class GeoChronicleViewModel(application: Application) : AndroidViewModel(applica
                     }
                 }
             }.onFailure { err ->
+                val fallbackMsg = getApplication<Application>().getString(R.string.failed_to_fetch_landmarks)
                 _placesUiState.value = PlacesUiState.Error(
-                    message = err.message ?: "Failed to fetch historical landmarks.",
+                    message = err.message ?: fallbackMsg,
                     cachedPlaces = emptyList()
                 )
             }
@@ -336,19 +347,7 @@ class GeoChronicleViewModel(application: Application) : AndroidViewModel(applica
                 }
             }
             if (current.isPaused) {
-                val dummyPlace = HistoricalPlace(
-                    pageId = current.placeId,
-                    title = current.title,
-                    description = "",
-                    extract = current.text,
-                    lat = 0.0,
-                    lon = 0.0,
-                    distanceMeters = 0.0,
-                    bearingDegrees = 0f,
-                    thumbnailUrl = null,
-                    category = PlaceCategory.GENERAL
-                )
-                narrator.speak(dummyPlace)
+                narrator.resume()
             } else {
                 narrator.stop()
             }

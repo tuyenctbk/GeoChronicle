@@ -1,18 +1,61 @@
-*.iml
-.gradle
-.kotlin
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
+# Built application files
+*.apk
+*.aar
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
 /build
-/captures
-.externalNativeBuild
-.cxx
+app/build/
+*/build/
+
+# Gradle files
+.gradle/
+buildOutputCleanup/
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Keystore files & Signing secrets
+*.jks
+*.keystore
+debug.keystore
+common_release_key.jks
+
+# Local configuration & environment variables
 local.properties
 .env
-debug.keystore
+.env.local
+
+# External native build
+.externalNativeBuild
+.cxx/
+cmake-build-*/
+
+# OS-specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Kotlin / Log files
+.kotlin/
+*.log
+captures/

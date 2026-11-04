@@ -153,14 +153,14 @@
     <!-- New General, Splash & Formats -->
     <string name="share_badge_tour">🏛️ ジオクロニクルツアー</string>
     <string name="share_footer_brand">🌐 GeoChronicle • 歩いて巡る歴史の旅</string>
-    <string name="progress_percentage_format">%1%%</string>
-    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="progress_percentage_format">%1$d%%</string>
+    <string name="route_trail_with_icon">🗺️ %1$s</string>
     <string name="selected_label">選択中</string>
     <string name="splash_title">GeoChronicle</string>
     <string name="splash_tagline">歩いて歴史の記憶を巡る</string>
-    <string name="radius_meter_format">%1</string>
-    <string name="radius_km_format">%1</string>
-    <string name="category_with_emoji_format">%1 %2</string>
+    <string name="radius_meter_format">%1$s</string>
+    <string name="radius_km_format">%1$s</string>
+    <string name="category_with_emoji_format">%1$s %2$s</string>
 
     <!-- 寄付システム -->
     <string name="donation_dialog_title">GeoChronicleの開発を支援</string>
@@ -216,5 +216,17 @@
     <string name="qr_content_description">PayPal寄付用ライブQRコード</string>
     <string name="live_gps_tracking">ライブGPS追跡</string>
     <string name="live_gps_walking_mode">ウォーキングモード有効</string>
+    <string name="historic_event_default">歴史的出来事</string>
+    <string name="historical_significance_title">歴史的意義</string>
+    <string name="share_more_stops_format">• 他 %1$d 件…</string>
+    <string name="device_gps_region">デバイスGPS</string>
+    <string name="custom_coords_region">カスタム座標</string>
+    <string name="custom_coords_desc_format">カスタム座標 (%1$s, %2$s)</string>
+    <string name="landmark_default_desc">地域アーカイブに記録された歴史的名所。</string>
+    <string name="landmark_default_extract">この周辺の注目すべき歴史的遺跡。</string>
+    <string name="failed_to_fetch_landmarks">歴史的名所の取得に失敗しました。</string>
+    <string name="tts_init_failed">音声合成エンジンの初期化に失敗しました。</string>
+    <string name="error_location_permission_not_granted">位置情報の権限が付与されていません。</string>
+    <string name="error_gps_unavailable">現在GPS位置情報を取得できません。</string>
 </resources>
 

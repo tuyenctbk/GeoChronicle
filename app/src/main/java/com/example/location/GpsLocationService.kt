@@ -8,6 +8,7 @@ import android.location.Location
 import android.location.LocationManager
 import android.os.Looper
 import androidx.core.content.ContextCompat
+import com.example.R
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
@@ -64,7 +65,7 @@ class GpsLocationService(private val context: Context) {
     @SuppressLint("MissingPermission")
     suspend fun getCurrentCoordinates(): Result<Location> {
         if (!hasLocationPermission()) {
-            return Result.failure(SecurityException("Location permission not granted"))
+            return Result.failure(SecurityException(context.getString(R.string.error_location_permission_not_granted)))
         }
 
         val cancellationSource = CancellationTokenSource()
@@ -83,7 +84,7 @@ class GpsLocationService(private val context: Context) {
                             if (lastLoc != null) {
                                 continuation.resume(Result.success(lastLoc))
                             } else {
-                                continuation.resume(Result.failure(Exception("GPS location currently unavailable")))
+                                continuation.resume(Result.failure(Exception(context.getString(R.string.error_gps_unavailable))))
                             }
                         }.addOnFailureListener { error ->
                             continuation.resume(Result.failure(error))
@@ -123,7 +124,7 @@ class GpsLocationService(private val context: Context) {
         minDistanceMeters: Float = 3f
     ): Flow<Location> = callbackFlow {
         if (!hasLocationPermission()) {
-            close(SecurityException("Location permission not granted"))
+            close(SecurityException(context.getString(R.string.error_location_permission_not_granted)))
             return@callbackFlow
         }
 

@@ -52,6 +52,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.R
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import kotlin.math.cos
 import kotlin.math.sin
 
@@ -85,18 +86,22 @@ fun SplashScreen(
     )
 
     LaunchedEffect(Unit) {
-        // Entrance animation
-        scale.animateTo(
-            targetValue = 1f,
-            animationSpec = tween(durationMillis = 800, easing = FastOutSlowInEasing)
-        )
-        alpha.animateTo(
-            targetValue = 1f,
-            animationSpec = tween(durationMillis = 700)
-        )
+        // Parallel entrance animations for smooth fade & scale in
+        launch {
+            scale.animateTo(
+                targetValue = 1f,
+                animationSpec = tween(durationMillis = 600, easing = FastOutSlowInEasing)
+            )
+        }
+        launch {
+            alpha.animateTo(
+                targetValue = 1f,
+                animationSpec = tween(durationMillis = 500)
+            )
+        }
 
-        // Display splash for 1.8 seconds then transition to home
-        delay(1800)
+        // Display splash for 2.2 seconds then transition to home
+        delay(2200)
         onSplashComplete()
     }
 

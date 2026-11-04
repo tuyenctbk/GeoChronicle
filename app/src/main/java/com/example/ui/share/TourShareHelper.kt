@@ -65,7 +65,7 @@ object TourShareHelper {
                 sb.append("• ").append(place.category.emoji).append(" ").append(place.title).append("\n")
             }
             if (data.visitedLandmarks.size > 5) {
-                sb.append("• +").append(data.visitedLandmarks.size - 5).append(" more...\n")
+                sb.append(context.getString(R.string.share_more_stops_format, data.visitedLandmarks.size - 5)).append("\n")
             }
             sb.append("\n")
         }
@@ -295,7 +295,7 @@ object TourShareHelper {
 
                 val safeTitle = if (place.title.length > 36) place.title.substring(0, 33) + "..." else place.title
                 canvas.drawText(safeTitle, 175f, currentY + 40f, itemTitlePaint)
-                canvas.drawText(place.category.name.lowercase().replaceFirstChar { it.uppercase() }, 175f, currentY + 66f, itemCatPaint)
+                canvas.drawText(context.getString(place.category.stringRes), 175f, currentY + 66f, itemCatPaint)
 
                 currentY += 92f
             }

@@ -153,14 +153,14 @@
     <!-- New General, Splash & Formats -->
     <string name="share_badge_tour">🏛️ GEOCHRONICLE 漫步之旅</string>
     <string name="share_footer_brand">🌐 GeoChronicle • 用脚步发现历史</string>
-    <string name="progress_percentage_format">%1%%</string>
-    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="progress_percentage_format">%1$d%%</string>
+    <string name="route_trail_with_icon">🗺️ %1$s</string>
     <string name="selected_label">已选择</string>
     <string name="splash_title">GeoChronicle</string>
     <string name="splash_tagline">用脚步重温被遗忘的历史</string>
-    <string name="radius_meter_format">%1米</string>
-    <string name="radius_km_format">%1公里</string>
-    <string name="category_with_emoji_format">%1 %2</string>
+    <string name="radius_meter_format">%1$s</string>
+    <string name="radius_km_format">%1$s</string>
+    <string name="category_with_emoji_format">%1$s %2$s</string>
 
     <!-- 赞助系统 -->
     <string name="donation_dialog_title">支持 GeoChronicle 开发</string>
@@ -216,5 +216,17 @@
     <string name="qr_content_description">PayPal 实时捐赠二维码</string>
     <string name="live_gps_tracking">实时 GPS 追踪</string>
     <string name="live_gps_walking_mode">徒步模式已激活</string>
+    <string name="historic_event_default">歷史事件</string>
+    <string name="historical_significance_title">歷史意義</string>
+    <string name="share_more_stops_format">• 還有 %1$d 個…</string>
+    <string name="device_gps_region">裝置 GPS</string>
+    <string name="custom_coords_region">自訂座標</string>
+    <string name="custom_coords_desc_format">自訂座標 (%1$s, %2$s)</string>
+    <string name="landmark_default_desc">區域檔案中記載的歷史古蹟。</string>
+    <string name="landmark_default_extract">此地區值得關注的歷史遺址。</string>
+    <string name="failed_to_fetch_landmarks">無法取得歷史名勝。</string>
+    <string name="tts_init_failed">文字轉語音引擎初始化失敗。</string>
+    <string name="error_location_permission_not_granted">未授予位置存取權限。</string>
+    <string name="error_gps_unavailable">目前無法取得 GPS 位置。</string>
 </resources>
 

@@ -153,14 +153,14 @@
     <!-- New General, Splash & Formats -->
     <string name="share_badge_tour">🏛️ PARCOURS GEOCHRONICLE</string>
     <string name="share_footer_brand">🌐 GeoChronicle • Découvrez l\'histoire à pied</string>
-    <string name="progress_percentage_format">%1%%</string>
-    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="progress_percentage_format">%1$d%%</string>
+    <string name="route_trail_with_icon">🗺️ %1$s</string>
     <string name="selected_label">Sélectionné</string>
     <string name="splash_title">GeoChronicle</string>
     <string name="splash_tagline">Explorez l\'histoire oubliée à pied</string>
-    <string name="radius_meter_format">%1</string>
-    <string name="radius_km_format">%1</string>
-    <string name="category_with_emoji_format">%1 %2</string>
+    <string name="radius_meter_format">%1$s</string>
+    <string name="radius_km_format">%1$s</string>
+    <string name="category_with_emoji_format">%1$s %2$s</string>
 
     <!-- Système de don -->
     <string name="donation_dialog_title">Soutenir le développement de GeoChronicle</string>
@@ -216,5 +216,17 @@
     <string name="qr_content_description">Code QR de don PayPal en direct</string>
     <string name="live_gps_tracking">Suivi GPS en direct</string>
     <string name="live_gps_walking_mode">Mode marche actif</string>
+    <string name="historic_event_default">Événement historique</string>
+    <string name="historical_significance_title">Importance historique</string>
+    <string name="share_more_stops_format">• +%1$d de plus…</string>
+    <string name="device_gps_region">GPS de l\'appareil</string>
+    <string name="custom_coords_region">Coordonnées personnalisées</string>
+    <string name="custom_coords_desc_format">Coordonnées personnalisées (%1$s, %2$s)</string>
+    <string name="landmark_default_desc">Monument historique consigné dans les archives régionales.</string>
+    <string name="landmark_default_extract">Site historique remarquable dans les environs.</string>
+    <string name="failed_to_fetch_landmarks">Impossible de récupérer les monuments historiques.</string>
+    <string name="tts_init_failed">Échec de l\'initialisation du moteur de synthèse vocale.</string>
+    <string name="error_location_permission_not_granted">Autorisation de localisation non accordée.</string>
+    <string name="error_gps_unavailable">Position GPS actuellement indisponible.</string>
 </resources>
 

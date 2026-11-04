@@ -153,14 +153,14 @@
     <!-- New General, Splash & Formats -->
     <string name="share_badge_tour">🏛️ HÀNH TRÌNH GEOCHRONICLE</string>
     <string name="share_footer_brand">🌐 GeoChronicle • Khám phá lịch sử từng bước chân</string>
-    <string name="progress_percentage_format">%1%%</string>
-    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="progress_percentage_format">%1$d%%</string>
+    <string name="route_trail_with_icon">🗺️ %1$s</string>
     <string name="selected_label">Đã chọn</string>
     <string name="splash_title">GeoChronicle</string>
     <string name="splash_tagline">Khám phá di tích lịch sử từng bước chân</string>
-    <string name="radius_meter_format">%1</string>
-    <string name="radius_km_format">%1</string>
-    <string name="category_with_emoji_format">%1 %2</string>
+    <string name="radius_meter_format">%1$s</string>
+    <string name="radius_km_format">%1$s</string>
+    <string name="category_with_emoji_format">%1$s %2$s</string>
 
     <!-- Hệ thống ủng hộ -->
     <string name="donation_dialog_title">Ủng hộ phát triển GeoChronicle</string>
@@ -216,5 +216,17 @@
     <string name="qr_content_description">Mã QR quyên góp PayPal</string>
     <string name="live_gps_tracking">Theo dõi GPS trực tiếp</string>
     <string name="live_gps_walking_mode">Chế độ đi bộ đang bật</string>
+    <string name="historic_event_default">Sự kiện lịch sử</string>
+    <string name="historical_significance_title">Ý nghĩa lịch sử</string>
+    <string name="share_more_stops_format">• +%1$d địa điểm khác…</string>
+    <string name="device_gps_region">GPS thiết bị</string>
+    <string name="custom_coords_region">Tọa độ tùy chỉnh</string>
+    <string name="custom_coords_desc_format">Tọa độ tùy chỉnh (%1$s, %2$s)</string>
+    <string name="landmark_default_desc">Di tích lịch sử được lưu trữ trong văn khố khu vực.</string>
+    <string name="landmark_default_extract">Địa điểm lịch sử đáng chú ý tại khu vực này.</string>
+    <string name="failed_to_fetch_landmarks">Không thể tải danh sách di tích lịch sử.</string>
+    <string name="tts_init_failed">Khởi tạo công cụ đọc giọng nói thất bại.</string>
+    <string name="error_location_permission_not_granted">Chưa cấp quyền vị trí.</string>
+    <string name="error_gps_unavailable">Hiện không thể xác định vị trí GPS.</string>
 </resources>
 

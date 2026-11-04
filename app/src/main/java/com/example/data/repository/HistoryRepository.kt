@@ -1,6 +1,8 @@
 package com.example.data.repository
 
 import com.example.data.api.ApiClient
+import android.content.Context
+import com.example.R
 import com.example.data.db.EventDao
 import com.example.data.db.EventEntity
 import com.example.data.db.HistoricalPlaceDao
@@ -22,7 +24,8 @@ import java.net.URLEncoder
 class HistoryRepository(
     private val placeDao: HistoricalPlaceDao,
     private val landmarkDao: LandmarkDao? = null,
-    private val eventDao: EventDao? = null
+    private val eventDao: EventDao? = null,
+    private val context: Context? = null
 ) {
     private val mediaWikiApi = ApiClient.mediaWikiService
     private val nominatimApi = ApiClient.nominatimService
@@ -35,6 +38,7 @@ class HistoryRepository(
 
     suspend fun reverseGeocode(lat: Double, lon: Double, languageCode: String = "en"): String {
         return withContext(Dispatchers.IO) {
+            val fallbackDistrict = context?.getString(R.string.historic_district) ?: "Historic District"
             try {
                 val resp = nominatimApi.reverseGeocode(lat, lon, language = languageCode)
                 val addr = resp.address
@@ -43,10 +47,10 @@ class HistoryRepository(
                 if (locality != null && region != null && locality != region) {
                     "$locality, $region"
                 } else {
-                    resp.displayName?.split(",")?.take(2)?.joinToString(",")?.trim() ?: "Historic District"
+                    resp.displayName?.split(",")?.take(2)?.joinToString(",")?.trim() ?: fallbackDistrict
                 }
             } catch (_: Exception) {
-                "Historic District"
+                fallbackDistrict
             }
         }
     }
@@ -103,11 +107,14 @@ class HistoryRepository(
 
                             val category = PlaceCategory.fromText(item.title, desc.ifBlank { extract })
 
+                            val defaultDesc = context?.getString(R.string.landmark_default_desc) ?: "Historical landmark recorded in regional archives."
+                            val defaultExtract = context?.getString(R.string.landmark_default_extract) ?: "Notable historical site in this vicinity."
+
                             HistoricalPlace(
                                 pageId = item.pageid,
                                 title = item.title,
-                                description = desc.ifBlank { "Historical landmark recorded in regional archives." },
-                                extract = extract.ifBlank { "Notable historical site in this vicinity." },
+                                description = desc.ifBlank { defaultDesc },
+                                extract = extract.ifBlank { defaultExtract },
                                 lat = item.lat,
                                 lon = item.lon,
                                 distanceMeters = distance,

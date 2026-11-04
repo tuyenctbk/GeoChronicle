@@ -153,14 +153,14 @@
     <!-- New General, Splash & Formats -->
     <string name="share_badge_tour">🏛️ GEOCHRONICLE TOUR</string>
     <string name="share_footer_brand">🌐 GeoChronicle • Geschichte zu Fuß entdecken</string>
-    <string name="progress_percentage_format">%1%%</string>
-    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="progress_percentage_format">%1$d%%</string>
+    <string name="route_trail_with_icon">🗺️ %1$s</string>
     <string name="selected_label">Ausgewählt</string>
     <string name="splash_title">GeoChronicle</string>
     <string name="splash_tagline">Vergessene Geschichte zu Fuß entdecken</string>
-    <string name="radius_meter_format">%1</string>
-    <string name="radius_km_format">%1</string>
-    <string name="category_with_emoji_format">%1 %2</string>
+    <string name="radius_meter_format">%1$s</string>
+    <string name="radius_km_format">%1$s</string>
+    <string name="category_with_emoji_format">%1$s %2$s</string>
 
     <!-- Spenden-System -->
     <string name="donation_dialog_title">GeoChronicle Entwicklung unterstützen</string>
@@ -216,5 +216,17 @@
     <string name="qr_content_description">Live PayPal-Spenden-QR-Code</string>
     <string name="live_gps_tracking">Live-GPS-Ortung</string>
     <string name="live_gps_walking_mode">Gehmodus aktiv</string>
+    <string name="historic_event_default">Historisches Ereignis</string>
+    <string name="historical_significance_title">Historische Bedeutung</string>
+    <string name="share_more_stops_format">• +%1$d weitere…</string>
+    <string name="device_gps_region">Geräte-GPS</string>
+    <string name="custom_coords_region">Benutzerdefinierte Koordinaten</string>
+    <string name="custom_coords_desc_format">Benutzerdefinierte Koordinaten (%1$s, %2$s)</string>
+    <string name="landmark_default_desc">In regionalen Archiven erfasstes historisches Wahrzeichen.</string>
+    <string name="landmark_default_extract">Bedeutende historische Stätte in dieser Umgebung.</string>
+    <string name="failed_to_fetch_landmarks">Historische Sehenswürdigkeiten konnten nicht geladen werden.</string>
+    <string name="tts_init_failed">Sprachausgabe-Engine konnte nicht initialisiert werden.</string>
+    <string name="error_location_permission_not_granted">Standortberechtigung nicht erteilt.</string>
+    <string name="error_gps_unavailable">GPS-Standort derzeit nicht verfügbar.</string>
 </resources>
 

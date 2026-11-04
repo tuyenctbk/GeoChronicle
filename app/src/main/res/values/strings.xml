@@ -153,14 +153,14 @@
     <!-- New General, Splash & Formats -->
     <string name="share_badge_tour">🏛️ GEOCHRONICLE TOUR</string>
     <string name="share_footer_brand">🌐 GeoChronicle • Discover History on Foot</string>
-    <string name="progress_percentage_format">%1%%</string>
-    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="progress_percentage_format">%1$d%%</string>
+    <string name="route_trail_with_icon">🗺️ %1$s</string>
     <string name="selected_label">Selected</string>
     <string name="splash_title">GeoChronicle</string>
     <string name="splash_tagline">Explore Forgotten History on Foot</string>
-    <string name="radius_meter_format">%1</string>
-    <string name="radius_km_format">%1</string>
-    <string name="category_with_emoji_format">%1 %2</string>
+    <string name="radius_meter_format">%1$s</string>
+    <string name="radius_km_format">%1$s</string>
+    <string name="category_with_emoji_format">%1$s %2$s</string>
 
     <!-- Donation System -->
     <string name="donation_dialog_title">Support GeoChronicle Development</string>
@@ -216,5 +216,17 @@
     <string name="qr_content_description">Live PayPal Donation QR Code</string>
     <string name="live_gps_tracking">Live GPS Tracking</string>
     <string name="live_gps_walking_mode">Walking Mode Active</string>
+    <string name="historic_event_default">Historic Event</string>
+    <string name="historical_significance_title">Historical Significance</string>
+    <string name="share_more_stops_format">• +%1$d more…</string>
+    <string name="device_gps_region">Device GPS</string>
+    <string name="custom_coords_region">Custom Coordinates</string>
+    <string name="custom_coords_desc_format">Custom coordinates (%1$s, %2$s)</string>
+    <string name="landmark_default_desc">Historical landmark recorded in regional archives.</string>
+    <string name="landmark_default_extract">Notable historical site in this vicinity.</string>
+    <string name="failed_to_fetch_landmarks">Failed to fetch historical landmarks.</string>
+    <string name="tts_init_failed">Text-to-speech engine failed to initialize.</string>
+    <string name="error_location_permission_not_granted">Location permission not granted.</string>
+    <string name="error_gps_unavailable">GPS location currently unavailable.</string>
 </resources>
 

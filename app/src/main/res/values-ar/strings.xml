@@ -153,14 +153,14 @@
     <!-- New General, Splash & Formats -->
     <string name="share_badge_tour">🏛️ جولة GEOCHRONICLE</string>
     <string name="share_footer_brand">🌐 GeoChronicle • استكشف التاريخ سيرًا على الأقدام</string>
-    <string name="progress_percentage_format">%1%%</string>
-    <string name="route_trail_with_icon">🗺️ %1</string>
+    <string name="progress_percentage_format">%1$d%%</string>
+    <string name="route_trail_with_icon">🗺️ %1$s</string>
     <string name="selected_label">محدد</string>
     <string name="splash_title">GeoChronicle</string>
     <string name="splash_tagline">استكشف التاريخ المنسي سيرًا على الأقدام</string>
-    <string name="radius_meter_format">%1 م</string>
-    <string name="radius_km_format">%1 كم</string>
-    <string name="category_with_emoji_format">%1 %2</string>
+    <string name="radius_meter_format">%1$s م</string>
+    <string name="radius_km_format">%1$s كم</string>
+    <string name="category_with_emoji_format">%1$s %2$s</string>
 
     <!-- نظام التبرع -->
     <string name="donation_dialog_title">دعم تطوير GeoChronicle</string>
@@ -216,5 +216,17 @@
     <string name="qr_content_description">رمز QR للتبرع عبر PayPal</string>
     <string name="live_gps_tracking">تتبع GPS المباشر</string>
     <string name="live_gps_walking_mode">وضع المشي نشط</string>
+    <string name="historic_event_default">حدث تاريخي</string>
+    <string name="historical_significance_title">الأهمية التاريخية</string>
+    <string name="share_more_stops_format">• +%1$d أخرى…</string>
+    <string name="device_gps_region">نظام تحديد المواقع للجهاز</string>
+    <string name="custom_coords_region">إحداثيات مخصصة</string>
+    <string name="custom_coords_desc_format">إحداثيات مخصصة (%1$s، %2$s)</string>
+    <string name="landmark_default_desc">معلَم تاريخي مسجل في الأرشيف الإقليمي.</string>
+    <string name="landmark_default_extract">موقع تاريخي بارز في هذه المنطقة.</string>
+    <string name="failed_to_fetch_landmarks">تعذر جلب المعالم التاريخية.</string>
+    <string name="tts_init_failed">فشل تهيئة محرك تحويل النص إلى كلام.</string>
+    <string name="error_location_permission_not_granted">لم يتم منح إذن الموقع.</string>
+    <string name="error_gps_unavailable">موقع GPS غير متاح حاليًا.</string>
 </resources>
 

@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
+import com.example.R
 import com.example.data.model.HistoricalPlace
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -24,7 +25,8 @@ sealed interface AudioNarrationState {
 
 class HistoryAudioNarrator(context: Context) : TextToSpeech.OnInitListener {
 
-    private var tts: TextToSpeech? = TextToSpeech(context.applicationContext, this)
+    private val appContext: Context = context.applicationContext
+    private var tts: TextToSpeech? = TextToSpeech(appContext, this)
     private var isInitialized = false
 
     private val _state = MutableStateFlow<AudioNarrationState>(AudioNarrationState.Idle)
@@ -65,7 +67,7 @@ class HistoryAudioNarrator(context: Context) : TextToSpeech.OnInitListener {
                 isInitialized = true
             }
         } else {
-            _state.value = AudioNarrationState.Error("Text-to-speech engine failed to initialize")
+            _state.value = AudioNarrationState.Error(appContext.getString(R.string.tts_init_failed))
         }
     }
 
@@ -79,16 +81,12 @@ class HistoryAudioNarrator(context: Context) : TextToSpeech.OnInitListener {
     private fun applyLocale(engine: TextToSpeech, langCode: String) {
         val locale = when (langCode) {
             "en" -> Locale.US
-            "es" -> Locale("es")
             "fr" -> Locale.FRENCH
             "de" -> Locale.GERMAN
             "it" -> Locale.ITALIAN
             "ja" -> Locale.JAPANESE
             "zh" -> Locale.SIMPLIFIED_CHINESE
-            "pt" -> Locale("pt")
-            "vi" -> Locale("vi")
-            "ar" -> Locale("ar")
-            else -> Locale.getDefault()
+            else -> Locale.forLanguageTag(langCode)
         }
         val result = engine.setLanguage(locale)
         if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
@@ -125,6 +123,10 @@ class HistoryAudioNarrator(context: Context) : TextToSpeech.OnInitListener {
             putString(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "place_${place.pageId}")
         }
         tts?.speak(speechText, TextToSpeech.QUEUE_FLUSH, params, "place_${place.pageId}")
+    }
+
+    fun resume() {
+        activePlace?.let { speak(it) }
     }
 
     fun stop() {
